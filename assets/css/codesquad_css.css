@@ -266,15 +266,22 @@ ul li ul li {
 
 .footerBak {
     background: url('../img/blackBak.png');
-    background-size: cover;
-    background-repeat: repeat;
+		background-size: cover;
+		display: flex;
+		justify-content: space-evenly;
+		/* background-repeat: repeat; */
+		/* width: 100%; */
+}
+
+.footerChild {
+	margin-right: auto;
 }
 
 .footerLogo {
-    background: url('../img/logo_inverse.png');
+    background: url('../img/CodeSquad-logo-white.png');
     background-size: cover;
     background-repeat: no-repeat;
-    width: 200px;
+    /* width: 100px; */
     height: 80px;
 }
 
@@ -744,7 +751,10 @@ select {
 	}
 	.flexChild {
 		width: 100%;
-	}	
+	}
+	.footerLogo {
+		height: 40px;
+	}
 	h1, h2 {
 		font-size: large;
 	}
