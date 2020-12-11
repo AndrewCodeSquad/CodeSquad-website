@@ -45,7 +45,18 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="index.html">What we do</a></li>
           <li class="active"><a href="#">For businesses<span class="sr-only">(current)</span></a></li>
-          <li><a href="students.html">For students</a></li>
+          <!-- <li><a href="students.html">For students</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              For students<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" id="cohortDropdown">
+              <li><a href="students.html">Curriculum</a></li>
+              <li><a href="studentsFAQ.html">FAQ</a></li>
+              <li><a href="apply.html">Apply to CodeSquad</a></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us <span class="caret"></span></a>
               <ul class="dropdown-menu" id="cohortDropdown">
@@ -97,16 +108,24 @@
     <h1 class="">
       Energize your workforce with CodeSquad graduates
     </h1>
-    <p class="width60">
+    <p class="width60 fontSizeCommon">
       CodeSquad students are trained in full-stack web development, focused on JavaScript and NodeJS. Their training also includes Mongo, Express, Agile methodology, effective communication and teamwork.
       <br />
       <br />
-      <a class="btnRed btn" href="https://goo.gl/forms/aaSsiaOElj57zGbC3" target="_blank">
+      <!-- BEFORE MELISSA'S CHANGES -->
+      <!-- <a class="btnRed btn" href="https://goo.gl/forms/aaSsiaOElj57zGbC3" target="_blank">
         <span id="btn1stLine">
           Explore a partnership
           <br />
           with CodeSquad
         </span>
+      </a> -->
+      <!-- AFTER MELISSA'S CHANGES -->
+      <a  href="https://goo.gl/forms/aaSsiaOElj57zGbC3" target="_blank">
+          <button class="actionButtonRed">
+            Explore a partnership <br />
+            with CodeSquad
+          </button>
       </a>
     </p>
 
@@ -120,7 +139,7 @@
             <p class="card-title">
               Agile ready
             </p>
-            <p class="card-text">
+            <p class="card-text fontSizeCommon">
               Agile is integrated into our curriculum.  As students learn web development, they gain experience with user stories, acceptance, standups and retrospectives.
             </p>
           </div>  <!-- End of card block -->
@@ -133,7 +152,7 @@
               <p class="card-title">
                 Team-oriented
               </p>
-              <p class="card-text">
+              <p class="card-text fontSizeCommon">
                 Classroom projects and homework are designed to mimic the experience of team-based software development. Class communication takes place largely on Slack, assignments are submitted via GitHub, and resources are shared through our learning management system.
               </p>
             </div>  <!-- End of card block -->
@@ -146,7 +165,7 @@
             <p class="card-title">
               Skilled in Git &amp; Testing
             </p>
-            <p class="card-text">
+            <p class="card-text fontSizeCommon">
               Students learn the importance of robust version control and testing, using industry-standard tools to track projects, resolve merge conflicts, and build their own automated and bespoke tests.
             </p>
           </div>
@@ -161,7 +180,7 @@
       <h2>
         Ongoing check-ins, training and mentoring
       </h2>
-      <p class="card-text">
+      <p class="card-text fontSizeCommon">
         During the internship, CodeSquad offers optional weekly check-ins with the hiring manager to assess the intern's performance and identify opportunities for guidance and additional training.  For added support, volunteer career mentors can be provided by CodeSquad or identified internally.
       </p>
     </div>
@@ -183,7 +202,7 @@
           <p class="card-title">
             Expand your talent pool
           </p>
-          <p class="card-text">
+          <p class="card-text fontSizeCommon">
             CodeSquad offers a pipeline of entry-level software talent that may not be part of your existing recruiting strategy. Let CodeSquad help you develop the talent that your team needs.
             <br />
             <br />
@@ -206,7 +225,7 @@
           <p class="card-title">
             "Try before you buy"
           </p>
-          <p class="card-text">
+          <p class="card-text fontSizeCommon">
             Companies can choose to hire CodeSquad graduates, or host them as interns on a short-term basis. This gives employers and students a chance to assess their fit within the team. However, we believe our students will surprise you with their knowledge and potential.
           </p>
         </div>
@@ -222,7 +241,7 @@
           <p class="card-title">
             Build team morale
           </p>
-          <p class="card-text">
+          <p class="card-text fontSizeCommon">
             Employees who use their valuable skills to "give back" can gain a sense of purpose that goes beyond the company mission and paycheck. And working with an organization that appreciates their expertise can help align charitable activities with the corporate mission.
           </p>
         </div>
@@ -235,7 +254,7 @@
           <p class="card-title">
             Add units to our curriculum
           </p>
-          <p class="card-text">
+          <p class="card-text fontSizeCommon">
             Companies who are committed to hosting interns can work with CodeSquad to customize our curriculum, to fit the needs of their technology stack.
           </p>
         </div>

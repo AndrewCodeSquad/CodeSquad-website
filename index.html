@@ -52,7 +52,18 @@
         <ul class="nav navbar-nav navbar-right">
           <li class="active"><a href="#">What we do<span class="sr-only">(current)</span></a></li>
           <li><a href="businesses.html">For businesses</a></li>
-          <li><a href="students.html">For students</a></li>
+          <!-- <li><a href="students.html">For students</a></li> -->
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">
+              For students<span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu" id="cohortDropdown">
+              <li><a href="students.html">Curriculum</a></li>
+              <li><a href="studentsFAQ.html">FAQ</a></li>
+              <li><a href="apply.html">Apply to CodeSquad</a></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
               aria-expanded="false">
@@ -83,9 +94,9 @@
     </div><!-- /.container-fluid -->
   </nav> <!-- End Navbar -->
 
-
+  <!-- BEFORE MELISSA'S CHANGES -->
   <!-- Begin Main Banner image and text -->
-  <div class="positionRel">
+  <!-- <div class="positionRel">
     <img src="assets/img/img_9951_crop2.jpg" width="1920" class="img-responsive center-block">
     <div class="mobileHide center">
       <div class="headlineTxt headlineTxtHome">
@@ -96,12 +107,13 @@
       </div>
     </div>
     <a href="apply.html">
-      <button class="headlineBtn btnWht headlineBtn1">
+      <button class="headlineBtn headlineBtn1">
         Apply to CodeSquad
       </button>
     </a>
     <a href="businesses.html">
-      <button class="headlineBtn btnRed headlineBtn2">
+      <button class="headlineBtn headlineBtn2">
+        Add diversity to your software team
         <span id="btn1stLine">
           Add diversity
         </span><br />
@@ -110,11 +122,39 @@
         </span>
       </button>
     </a>
+  </div>  -->
+  <!-- End Main Banner image and text -->
+
+<!-- AFTER MELISSA'S CHANGES -->
+  <!-- Begin Main Banner image and text -->
+  <div class="mainBanner">
+    <div class="mobileHide">
+      <div class="headlineContainer">
+        <div class="headlineTextBannerLarge">
+          CodeSquad builds a pipeline of talent
+          <div class="headlineTextBannerMedium">
+            and stable careers in low-income communities
+          </div>
+        </div>
+      </div>
+      <div class="mainBannerButtonContainer">
+        <a href="apply.html">
+          <button class="headlineButton1">
+            Apply to CodeSquad
+          </button>
+        </a>
+        <a href="businesses.html">
+          <button class="headlineButton2">
+            Add diversity to your software team
+          </button>
+        </a>
+      </div>
+    </div>
   </div> <!-- End Main Banner image and text -->
 
-
+  <!-- BEFORE MELISSA'S CHANGES -->
   <!-- Begin Red Bar with arrow -->
-  <div class="red-bar">
+  <!-- <div class="red-bar">
     <div class="mobileShow">
       CodeSquad builds new opportunities
     </div>
@@ -124,11 +164,24 @@
   </div>
   <div>
     <img src="assets/img/arrow.png" width="65" height="40" class="img-responsive center-block">
-  </div> <!-- End Red Bar with arrow -->
+  </div>  -->
+  <!-- <div class="red-bar red-bar-empty"></div> -->
+  <!-- End Red Bar with arrow -->
 
 
-  <!-- Begin Theory of Change -->
-  <div class="container">
+  <!-- AFTER MELISSA'S CHANGES -->
+  <!-- Begin Red Bar Separator -->
+  <div class="red-bar">
+    CodeSquad builds new opportunities
+  </div>
+  <div>
+    <img src="assets/img/arrow.png" width="65" height="40" class="img-responsive center-block">
+  </div>
+
+
+<!-- BEFORE MELISSA'S CHANGES -->
+<!-- Begin Theory of Change --> 
+  <!-- <div class="container">
     <h1 class="center">
       Companies turn to CodeSquad to build their pipeline of entry-level web and mobile developers
     </h1>
@@ -138,7 +191,6 @@
       Agile methodology, effective communication and teamwork. Following their training, CodeSquad works to place
       graduates in full-time software and technology jobs in greater Boston.
     </p>
-
     <div class="row graduateCompanies">
       <h1 class="text-center">Our grads have found jobs at companies including:</h1>
       <div class="col-xs-12 col-sm-4 col-md-3">
@@ -163,125 +215,277 @@
          <img src="./assets/img/grad-companies/wayfair_logo.png" class="img-responsive center-block" alt="Wayfair logo">
       </div>
     </div>
-
     <h2 class="center slantBoxRed">
       <span style="color: white;">Meet our graduates: <a href="cohort.html">2018</a>, <a href="cohort2019.html">2019</a>, <a href="cohort2020.html">2020</a></span>
     </h2>
-  </div> <!-- End Theory of Change -->
+  </div>  -->
+  <!-- End Theory of Change -->
 
 
-  <!-- Begin Slanted Boxes -->
-  <!-- <div class="row rowBlk">
-    <div class="col-sm-4 slantBoxRed">
-      <h3 class="center">
-        Become a developer
-      </h3>
-      <p class="width80 center">
-        Our free, 18-week intensive training program empowers adults from traditionally underserved communities to
-        become successful software developers. Are you ready to reach your full potential?
-      </p>
+  <!-- AFTER MELISSA'S CHANGES -->
+  <!-- Begin About Section -->
+  <div class="container">
+    <!-- Possible header -->
+    <!-- <h1 class="center">
+      About us
+    </h1> -->
+    <br />
+    <p class="width80 fontSizeCommon">
+      CodeSquad is a non-profit organization that trains talented adults from Boston's urban core to become full-stack
+      web developers and launch a new career. Students are trained in web design and server-side development, as well as
+      Agile methodology, effective communication, and teamwork. Following their training, CodeSquad works to place
+      graduates in full-time software and technology jobs in greater Boston.
+    </p>
+    <br /><br />
+  </div>
+<!-- End About Section -->
+
+  <!-- AFTER MELISSA'S CHANGES -->
+  <!-- Begin Red Bar Separator -->
+  <div class="red-bar red-bar-empty"></div>
+
+
+  <!-- Begin Graduate's Companies -->
+  <div class="containerWholeWidth"> 
+    <h1 class="text-center">Our grads have found jobs at companies including:</h1>
+    <div class="graduateCompaniesContainer">
+      <div class="logoContainer">
+        <img src="./assets/img/grad-companies/athenahealthLogo.png" class="img-responsive center-block" alt="CyberGrants logo">
+    </div>
+      <div class="logoContainer">
+          <img src="./assets/img/grad-companies/CyberGrants.png" class="img-responsive center-block" alt="CyberGrants logo">
+      </div>
+      <div class="logoContainer">
+        <img src="./assets/img/grad-companies/exaltLogoSmall.png" class="img-responsive center-block" alt="eXalt logo">
+      </div>
+      <div class="logoContainer">
+          <img src="./assets/img/grad-companies/HUIT_logo.png" class="img-responsive center-block" alt="Harvard University IT logo">
+      </div>
+      <div class="logoContainer">
+          <img src="./assets/img/grad-companies/LibertyMutual.png" class="img-responsive center-block" alt="Liberty Mutual logo">
+      </div>
+      <div class="logoContainer">
+          <img src="./assets/img/grad-companies/Rapid7_logo.png" class="img-responsive center-block" alt="Rapid7 logo">
+      </div>
+      <div class="logoContainer">
+          <img src="./assets/img/grad-companies/TripAdvisor.svg" class="img-responsive center-block" alt="TripAdvisor logo">
+      </div>
+      <div class="logoContainer">
+          <img src="./assets/img/grad-companies/wayfair.png" class="img-responsive center-block" alt="Wayfair logo">
+      </div>
+    </div>
+    <div class="mainBannerButtonContainer">
       <a href="apply.html">
-        <button class="btnWht btnBuildSkills">
+        <button class="headlineButton1Red">
           Apply to CodeSquad
         </button>
       </a>
-    </div>
-    <div class="col-sm-4 slantIndex">
-      <div class="redSlant"></div>
-      <div class="blackSlantRight"></div>
-    </div>
-    <div class="col-sm-4 slantBoxBlk">
-      <h3 class="center">
-        Join us on Facebook
-      </h3>
-      <p class="width80 center">
-        Visit us at <a href="http://www.facebook.com/CodeSquadOrg">facebook.com/CodeSquadOrg</a> for events and updates.
-      </p>
-      <a href="http://www.facebook.com/CodeSquadOrg">
-        <button class="FBbutton">
-          <img src="assets/img/fb-logo.png" height="54" width="54" alt="Facebook logo">
-          Check it out
+      <a href="businesses.html">
+        <button class="headlineButton2">
+          Add diversity to your software team
         </button>
       </a>
     </div>
-  </div> End of "row" -->
-  <!-- End Slanted Boxes -->
-
-
-  <!-- Begin Momentum section using Bootstrap grid -->
-  <div class="positionRel momentumBak">
-    <div class="container-fluid">
-      <!-- Begin container -->
-      <div class="row">
-        <!-- Begin first row -->
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
-          <h2 class="center">
-            We are building momentum
-          </h2>
-          <div class="top-red-line">
-          </div>
-        </div>
-      </div> <!-- End 1st row -->
-
-      <!-- Begin second row -->
-      <div class="row">
-
-        <div class="col-xs-12 col-md-4 col-md-offset-2 momentumFacts">
-          <div class="momentumRed text-center">
-            40+ guests
-            <p class="momentumTxt">Over 40 CEOs, recruiters, hiring managers, and other champions attended CodeSquad's 2020 Project Day.</p>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-md-4 momentumFacts">
-          <div class="momentumRed text-center">
-            12+ technologies
-            <p class="momentumTxt">Our students are trained in the full web stack, from HTML and CSS to JavaScript, Node, Express, Mongo and more.</p>
-          </div>
-        </div>
-        <div class="col-xs-12 col-md-4 col-md-offset-2 momentumFacts">
-          <div class="momentumRed text-center">
-            New talent
-            <p class="momentumTxt">Our graduates don't match the typical demographics of Boston's tech sector:</p>
-            <ul class="momentumTxt momentumUL">
-              <li>60% are women (or non-binary)</li>
-              <li>94% are African-American, Latino, Native American, Asian or multi-racial</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-xs-12 col-md-4 momentumFacts">
-          <div class="momentumRed text-center">
-            60+ Engineers &amp; Execs
-            <p class="momentumTxt">have volunteered as coding coaches, career panelists or advisors.</p>
-          </div>
-        </div>
-
-      </div> <!-- End of second row-->
-  </div> <!-- End Momentum section using Bootstrap -->
-
   </div>
+  <!-- End Graduate's Companies -->
 
-    <!-- Funders-->
-    <div class="container">
-      <div class="row funderCompanies">
-        <h1 class="text-center">Our Funders:</h1>
-        <div class="equal-columns">
-          <div class="col-xs-12 col-sm-6">
-            <img src="./assets/img/mowd-logo.jpg" class="img-responsive center-block" alt="Mayor's Office of Workforce Development, Neighborhood Jobs Trust logo">
-          </div>
-          <div class="col-xs-12 col-sm-6 vertical-align">
-            <img src="./assets/img/rahunt-logo.jpg" class="img-responsive center-block" alt="R.A. Hunt Foundation logo">
-          </div>
+<!-- BEFORE MELISSA'S CHANGES -->
+    <!-- <h2 class="center slantBoxRed">
+      <span style="color: white;">Meet our graduates: <a href="cohort.html">2018</a>, <a href="cohort2019.html">2019</a>, <a href="cohort2020.html">2020</a></span>
+    </h2> -->
+
+
+<!-- AFTER MELISSA'S CHANGES -->
+<!-- Begin Red Bar for Meet Graduates -->
+  <h2 class="center slantBoxRed">
+    <span style="color: white;">Meet our graduates: <br /> 
+      <a href="cohort.html">2018</a> &nbsp; &nbsp; <a href="cohort2019.html">2019</a> &nbsp; &nbsp; &nbsp;<a href="cohort2020.html">2020</a></span>
+  </h2>
+<!-- End Red Bar for Meet Graduates -->
+
+
+<!-- Begin Slanted Boxes -->
+<!-- <div class="row rowBlk">
+  <div class="col-sm-4 slantBoxRed">
+    <h3 class="center">
+      Become a developer
+    </h3>
+    <p class="width80 center">
+      Our free, 18-week intensive training program empowers adults from traditionally underserved communities to
+      become successful software developers. Are you ready to reach your full potential?
+    </p>
+    <a href="apply.html">
+      <button class="btnWht btnBuildSkills">
+        Apply to CodeSquad
+      </button>
+    </a>
+  </div>
+  <div class="col-sm-4 slantIndex">
+    <div class="redSlant"></div>
+    <div class="blackSlantRight"></div>
+  </div>
+  <div class="col-sm-4 slantBoxBlk">
+    <h3 class="center">
+      Join us on Facebook
+    </h3>
+    <p class="width80 center">
+      Visit us at <a href="http://www.facebook.com/CodeSquadOrg">facebook.com/CodeSquadOrg</a> for events and updates.
+    </p>
+    <a href="http://www.facebook.com/CodeSquadOrg">
+      <button class="FBbutton">
+        <img src="assets/img/fb-logo.png" height="54" width="54" alt="Facebook logo">
+        Check it out
+      </button>
+    </a>
+  </div>
+</div> End of "row" -->
+<!-- End Slanted Boxes -->
+
+
+<!-- Begin Slanted Boxes -->
+<div class="row rowBlk wholeWidth">
+  <div class="col-sm-4 slantBoxRed maxHeight">
+    <h3 class="center">
+      &quot;I liked everything... hands on... great interaction with staff&quot;
+    </h3>
+    <p class="width80 center">
+      - Participant at a <em>Coding &amp; Career Event</em>
+    </p>
+    <a href="https://forms.gle/eBCjRoBsTKy6ZwmH8" target="_blank">
+      <button class="btnWht joinUsBtn">
+        <span id="btn1stLine">
+          Register
+        </span>
+        <br />
+        <span id="btn2ndLine">
+          for our next event
+        </span>
+      </button>
+    </a>
+  </div>
+  <div class="col-sm-4 slantStudent maxHeight">
+    <div class="redSlant2"></div>
+    <div class="blackSlant2"></div>
+  </div>
+  <div class="col-sm-4 slantBoxBlk maxHeight">
+    <h3 class="center">
+      Join us on Facebook
+    </h3>
+    <p class="width80 center">
+      Visit us at <a href="http://www.facebook.com/CodeSquadOrg" target="_blank">facebook.com/CodeSquadOrg</a> for events and updates.
+    </p>
+    <a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
+      <button class="FBbutton">
+        <img src="assets/img/Facebook-logo3.png" height="54" width="54" alt="Facebook logo">
+        Check it out
+      </button>
+    </a>
+  </div>
+</div> 
+<!-- End of "row" -->
+<!-- End Slanted Boxes -->
+
+<!-- Begin Momentum section using Bootstrap grid -->
+<div class="positionRel momentumBak">
+  <div class="container-fluid">
+    <!-- Begin container -->
+    <div class="row">
+      <!-- Begin first row -->
+      <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2">
+        <h2 class="center">
+          We are building momentum
+        </h2>
+        <div class="top-red-line">
+        </div>
+      </div>
+    </div> <!-- End 1st row -->
+
+    <!-- Begin second row -->
+    <div class="row">
+      <div class="col-xs-12 col-md-4 col-md-offset-2 momentumFacts">
+        <div class="momentumRed text-center">
+          40+ Guests
+          <p class="momentumTxt">Over 40 CEOs, recruiters, hiring managers, and other champions attended CodeSquad's 2020 Project Day.</p>
         </div>
       </div>
 
-    </div> <!-- End Funders-->
-    </div> <!-- End Partners-->
+      <div class="col-xs-12 col-md-4 momentumFacts">
+        <div class="momentumRed text-center">
+          12+ Technologies
+          <p class="momentumTxt">Our students are trained in the full web stack, from HTML and CSS to JavaScript, Node, Express, Mongo, and more.</p>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4 col-md-offset-2 momentumFacts">
+        <div class="momentumRed text-center">
+          New Talent
+          <p class="momentumTxt">Our graduates don't match the typical demographics of Boston's tech sector:</p>
+          <ul class="momentumTxt momentumUL">
+            <li>60% are women (or non-binary)</li>
+            <li>94% are African-American, Latino, Native American, Asian, or multi-racial</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-md-4 momentumFacts">
+        <div class="momentumRed text-center">
+          60+ Engineers &amp; Execs
+          <p class="momentumTxt">Over 60 engineers and execs have volunteered as coding coaches, career panelists, and advisors.</p>
+        </div>
+      </div>
+
+    </div> <!-- End of second row-->
+  </div> <!-- End Momentum section using Bootstrap -->
+</div>
+
+<!-- AFTER MELISSA'S CHANGES -->
+<!-- Begin Red Bar Separator -->
+<div class="red-bar red-bar-empty"></div>
+
+<!-- BEFORE MELISSA'S CHANGES  -->
+<!-- Funders-->
+  <!-- <div class="container">
+    <div class="row funderCompanies">
+      <h1 class="text-center">Our Funders:</h1>
+      <div class="equal-columns">
+        <div class="col-xs-12 col-sm-6">
+          <img src="./assets/img/mowd-logo.jpg" class="img-responsive center-block" alt="Mayor's Office of Workforce Development, Neighborhood Jobs Trust logo">
+        </div>
+        <div class="col-xs-12 col-sm-6 vertical-align">
+          <img src="./assets/img/rahunt-logo.jpg" class="img-responsive center-block" alt="R.A. Hunt Foundation logo">
+        </div>
+      </div>
+    </div> -->
+  <!-- </div>  -->
+  <!-- End Funders-->
+<!-- </div>  -->
+<!-- End Partners-->
+
+<!-- AFTER MELISSA'S CHANGES -->
+<!-- Begin Red Bar Separator -->
+<div class="container">
+  <div class="row funderCompanies">
+    <h1 class="text-center">Our Funders:</h1>
+    <div class="fundersContainer">
+      <div class="logoContainer">
+        <img src="./assets/img/mayorsOfficeLogo.png" class="img-responsive center-block" alt="Mayor's Office of Workforce Development, Neighborhood Jobs Trust logo">
+      </div>
+      <div class="logoContainer">
+        <img src="./assets/img/RAHFLogo.jpg" class="img-responsive center-block" alt="R.A. Hunt Foundation logo">
+      </div>
+    </div>
+    <br />
+  </div>
+</div> <!-- End Funders-->
+<!-- End Partners-->
+
+
+<div class="red-bar red-bar-empty"></div>
+
 
   <!-- Begin page footer -->
   <footer>
-    <div class="top-red-line"></div>
+    <!-- <div class="top-red-line"></div> -->
     <div class="positionRel footerFont footerBak">
       <div class="container-fluid">
         <div class="row">
