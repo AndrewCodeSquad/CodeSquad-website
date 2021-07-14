@@ -3,12 +3,21 @@ html {
 	margin: 0;
 }
 
+.row,
+.container-fluid > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container > .navbar-collapse,
+.container > .navbar-header {
+	margin-left: 0;
+	margin-right: 0;
+}
+
 a {
-	color: rgb(160,160,158);
+	color: rgb(160, 160, 158);
 }
 
 .active {
-	background-color: rgb(203,53,36);
+	background-color: rgb(203, 53, 36);
 }
 
 /*.bizBak {
@@ -25,19 +34,19 @@ a {
 	height: 0;
 	border-top: 304px solid transparent;
 	border-right: 80px solid black;
-	border-bottom: 0; 
+	border-bottom: 0;
 }
 
 .blackSlantLeft {
 	position: absolute;
 	top: 0;
-	left: 0;	
+	left: 0;
 	width: 0;
 	height: 0;
 	border-top: 0;
 	border-right: 0;
 	border-left: 80px solid black;
-	border-bottom: 280px solid transparent; 
+	border-bottom: 280px solid transparent;
 }
 
 .blackSlant2 {
@@ -48,11 +57,11 @@ a {
 	height: 0;
 	border-top: 280px solid transparent;
 	border-right: 80px solid black;
-	border-bottom: 0; 
+	border-bottom: 0;
 }
 
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: "Lato", sans-serif;
 	font-size: medium;
 	font-weight: 700;
 }
@@ -69,7 +78,7 @@ body {
 
 .btnWht {
 	/* red text on white */
-	color: rgb(203,53,36);
+	color: rgb(203, 53, 36);
 	background-color: white;
 	padding: 1% 1.4%;
 }
@@ -77,7 +86,7 @@ body {
 .btnRed {
 	/* white text on red */
 	color: white;
-	background-color: rgb(203,53,36);
+	background-color: rgb(203, 53, 36);
 }
 
 .btnBuildSkills {
@@ -110,8 +119,8 @@ body {
 }
 
 .card {
-	border: 1px solid rgba(0,0,0,.125);
-	border-radius: .25rem;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
 	display: inline-block;
 	width: 100%;
 	margin: 1rem 0;
@@ -139,19 +148,19 @@ body {
 }*/
 
 .card-header {
-    padding: .75rem 1.25rem;
-    margin-bottom: 0;
-    font-size: large;
-    color: white;
-    background-color: #343434;
-    border-bottom: 1px solid rgba(0,0,0,.125);
+	padding: 0.75rem 1.25rem;
+	margin-bottom: 0;
+	font-size: large;
+	color: white;
+	background-color: #343434;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .card-img-float {
 	float: left;
 }
 
-.card-img-overlay{
+.card-img-overlay {
 	padding: 0;
 }
 
@@ -172,7 +181,7 @@ body {
 	font-size: x-large;
 	text-transform: uppercase;
 	line-height: 1.1;
-	margin:	0;
+	margin: 0;
 }
 
 .card-subhead {
@@ -198,7 +207,7 @@ ul li ul li {
 }
 
 .donateBak {
-	background: url('../img/Dudley2Kendall.png');
+	background: url("../img/Dudley2Kendall.png");
 	background-size: 100% auto;
 	/* background-position: center top; */
 	background-repeat: no-repeat;
@@ -230,7 +239,7 @@ ul li ul li {
 }
 
 .eventDates .borderLeft {
-	border-left: 1px solid rgba(0,0,0,.125);
+	border-left: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .FBbutton {
@@ -239,7 +248,7 @@ ul li ul li {
 	height: 54px;
 	width: auto;
 	color: white;
-	background-color: rgb(59,89,152); /* FaceBook blue*/
+	background-color: rgb(59, 89, 152); /* FaceBook blue*/
 	text-decoration: none;
 	font-size: x-large;
 	border: none;
@@ -251,7 +260,7 @@ ul li ul li {
 .flexContainer {
 	display: flex;
 	justify-content: center;
-	align-items: center;	
+	align-items: center;
 }
 .flexChild {
 	margin: 0 0 3% 3%;
@@ -261,21 +270,21 @@ ul li ul li {
 }
 
 .footerFont {
-	color: rgb(160,160,158);
+	color: rgb(160, 160, 158);
 }
 
 .footerBak {
-    background: url('../img/blackBak.png');
-    background-size: cover;
-    background-repeat: repeat;
+	background: url("../img/blackBak.png");
+	background-size: cover;
+	background-repeat: repeat;
 }
 
 .footerLogo {
-    background: url('../img/logo_inverse.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 200px;
-    height: 80px;
+	background: url("../img/logo_inverse.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 200px;
+	height: 80px;
 }
 
 .footerHead {
@@ -325,7 +334,7 @@ h4 {
 	/*color: white;*/
 	font-size: x-large;
 	text-transform: uppercase;
-	margin:	0;
+	margin: 0;
 	padding: 10% 0 0 10%; /*top right bottom left*/
 }
 
@@ -468,9 +477,9 @@ img {
 }
 
 .momentumBak {
-    background: url('../img/img_8257_momentum3.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background: url("../img/img_8257_momentum3.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 /* .momentumBlurbHead {
@@ -501,7 +510,7 @@ img {
 }
 
 .momentumRed {
-	color: rgb(203,53,36);
+	color: rgb(203, 53, 36);
 	font-size: 3em;
 	/* padding-top: 0.5%; */
 	padding-bottom: 1%;
@@ -509,7 +518,7 @@ img {
 
 .momentumTxt {
 	color: black;
-	text-align: left;	
+	text-align: left;
 	font-size: large;
 }
 
@@ -544,15 +553,15 @@ img {
 	padding: 10px 15px;
 }
 
-.navbar-default .navbar-nav > .active > a, 
-.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-	background-color: rgb(203,53,36);
+	background-color: rgb(203, 53, 36);
 	color: white;
 }
 
 .navbar-brand {
-	padding: 0;	
+	padding: 0;
 }
 
 p {
@@ -583,7 +592,6 @@ p {
 
 .positionRel p {
 	margin: 0;
-	
 }
 
 .pOverflow {
@@ -593,18 +601,18 @@ p {
 }
 
 .recruitment-alert {
-  background-color: rgb(203,53,36);
-  color: white;
-  border-radius: 0%;
+	background-color: rgb(203, 53, 36);
+	color: white;
+	border-radius: 0%;
 }
 
 .recruitment-alert a {
-  color: white;
-  text-decoration: underline;
+	color: white;
+	text-decoration: underline;
 }
 
 .red-bar {
-	background-color: rgb(203,53,36);
+	background-color: rgb(203, 53, 36);
 	color: white;
 	font-size: x-large;
 	text-align: center;
@@ -612,7 +620,7 @@ p {
 	margin: 0 auto;
 }
 
-.red-bar-empty{
+.red-bar-empty {
 	height: 30px;
 }
 
@@ -620,22 +628,22 @@ p {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 0; 
-	height: 0; 
+	width: 0;
+	height: 0;
 	border-right: 5px solid transparent;
 	border-bottom: 304px solid transparent;
-	border-left: 80px solid #CB3524; /* CodeSquad red in hex code */
+	border-left: 80px solid #cb3524; /* CodeSquad red in hex code */
 }
 
 .redSlant2 {
 	position: absolute;
 	top: 0;
 	left: 0;
-  width: 0; 
-  height: 0; 
-  border-right: 5px solid transparent;
-  border-bottom: 280px solid transparent;
-  border-left: 80px solid #CB3524; /* CodeSquad red in hex code */
+	width: 0;
+	height: 0;
+	border-right: 5px solid transparent;
+	border-bottom: 280px solid transparent;
+	border-left: 80px solid #cb3524; /* CodeSquad red in hex code */
 }
 
 .rowBlk {
@@ -643,8 +651,8 @@ p {
 }
 
 select {
-	color: rgb(160,160,158);
-	background-color: rgb(36,34,35);
+	color: rgb(160, 160, 158);
+	background-color: rgb(36, 34, 35);
 	/*align-self: right;*/
 	padding: 12px 0px;
 	border: none;
@@ -657,72 +665,73 @@ select {
 }
 
 .slantBoxRed {
-	background-color: rgb(203,53,36);
+	background-color: rgb(203, 53, 36);
 	color: white;
 	padding: 1% 2.5%;
 }
 
-.slantBoxRed p, .slantBoxBlk p {
-	color: rgb(242,240,240);
+.slantBoxRed p,
+.slantBoxBlk p {
+	color: rgb(242, 240, 240);
 }
 
 .slantIndex {
-    background: url('../img/9484-cropVert.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 304px;
+	background: url("../img/9484-cropVert.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 304px;
 }
 
 .slantBiz {
-    background: url('../img/img_9511.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background: url("../img/img_9511.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 .slantProj {
-    background: url('../img/gratitude.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+	background: url("../img/gratitude.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .slantDonate {
-	background: url('../img/handshake4.jpg');
+	background: url("../img/handshake4.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 280px;
 }
 
 .slantStudent {
-    background: url('../img/img_8089_crop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 280px;
+	background: url("../img/img_8089_crop.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 280px;
 }
 
 .slantStudent2 {
-    background: url('../img/9484-cropVert.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 280px;
+	background: url("../img/9484-cropVert.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 280px;
 }
 
 .top-red-line {
 	height: 5px;
-	background-color: rgb(203,53,36);
+	background-color: rgb(203, 53, 36);
 }
 
 .underline {
 	padding-bottom: 1%;
-	text-decoration: underline rgb(203,53,36);
+	text-decoration: underline rgb(203, 53, 36);
 	/*width: 100%;*/
-/*	border-style: solid;
+	/*	border-style: solid;
 	border-color: rgb(203,53,36);
 	border-width: 1px;*/
 }
 
 .vertical-align {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .width60 {
@@ -739,20 +748,21 @@ select {
 		width: 100%;
 	}
 	.card-TechAdvisor {
-		padding: 0;	
+		padding: 0;
 	}
 	.flexCol {
 		width: 100%;
 	}
 	.flexChild {
 		width: 100%;
-	}	
-	h1, h2 {
+	}
+	h1,
+	h2 {
 		font-size: large;
 	}
 	.headlineBtn {
-    /* For mobile phones: */
-    	display: none;
+		/* For mobile phones: */
+		display: none;
 	}
 	.headlineTxt {
 		font-size: x-large;
@@ -777,7 +787,8 @@ select {
 		top: 110%;
 		left: 18%;
 	}
-	.joinUsBtn, .FBbutton {
+	.joinUsBtn,
+	.FBbutton {
 		font-size: large;
 	}
 	.mobileShow {
@@ -793,16 +804,19 @@ select {
 	.navbar-brand img {
 		height: 100%;
 	}
-	p, li {
+	p,
+	li {
 		font-size: small;
 	}
 	.pOverflow {
 		font-size: small;
 	}
-	.slantBoxRed, .slantBoxBlk {
+	.slantBoxRed,
+	.slantBoxBlk {
 		padding: 1% 5%;
 	}
-	.width60, .width80 {
+	.width60,
+	.width80 {
 		width: 100%;
 	}
 }
@@ -810,19 +824,19 @@ select {
 @media (min-width: 576px) {
 	.card-columns {
 		-webkit-column-count: 2;
-    	-moz-column-count: 2;
-    	column-count: 2;
-	    -webkit-column-gap: 1.25rem;
-	    -moz-column-gap: 1.25rem;
-	    column-gap: 1.25rem;
+		-moz-column-count: 2;
+		column-count: 2;
+		-webkit-column-gap: 1.25rem;
+		-moz-column-gap: 1.25rem;
+		column-gap: 1.25rem;
 	}
 }
 
 @media (min-width: 768px) {
-  .equal-columns {
-    display: flex;
-    flex-wrap: wrap;
-  }
+	.equal-columns {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 /* Smaller laptops */
@@ -846,5 +860,5 @@ select {
 	.navbar-right li a {
 		padding: 10px;
 		font-size: small;
-		}
+	}
 }
