@@ -1445,9 +1445,9 @@ select {
 	padding: 10px 0 0 0;
 }
 
-footer {
+/* footer {
 	margin-top: -10px;
-}
+} */
   
 /* The actual timeline (the vertical ruler) */
 .timeline::after {
