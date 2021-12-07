@@ -824,10 +824,6 @@ select {
 	.navbar-brand img {
 		height: 100%;
 	}
-	p,
-	li {
-		font-size: small;
-	}
 	.pOverflow {
 		font-size: small;
 	}
