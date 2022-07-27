@@ -121,10 +121,18 @@ body {
 	margin: 0;
 }
 
+.cta {
+  width: 100px;
+}
+
 .calloutTxt {
 	border: 1px solid #252525;
 	width: 40%;
 	margin: auto;
+}
+
+.whitespace {
+  margin: 3rem 0;
 }
 
 .card {
@@ -217,9 +225,9 @@ ul li ul li {
 
 .donateBak {
 	background: url("../img/Dudley2Kendall.png");
-	background-size: 100% auto;
-	/* background-position: center top; */
-	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+  padding-bottom: 3em;
 }
 
 .donateBlurb {
@@ -286,6 +294,7 @@ ul li ul li {
 	background: url("../img/blackBak.png");
 	background-size: cover;
 	background-repeat: repeat;
+  padding-bottom: 2em;;
 }
 
 .footerLogo {
@@ -326,6 +335,10 @@ h1 {
 	margin: 3% 8% 2% 8%;
 }
 
+h1 span {
+  font-size: large;
+}
+
 h2 {
 	font-size: xx-large;
 	font-weight: bold;
@@ -350,6 +363,10 @@ h4 {
 h5 {
 	font-size: large;
 	font-weight: bold;
+}
+
+.nouc {
+  text-transform: none;;
 }
 
 .headlineBtn {
@@ -670,13 +687,13 @@ p {
 	background-color: black;
 }
 
-select {
+/* select {
 	color: rgb(160, 160, 158);
 	background-color: rgb(36, 34, 35);
-	/*align-self: right;*/
+	align-self: right;
 	padding: 12px 0px;
 	border: none;
-}
+} */
 
 .slantBoxBlk {
 	background-color: black;
@@ -1561,6 +1578,25 @@ footer {
 	-webkit-box-sizing: unset;
 	font-weight: unset;
 }
+
+/* Mailchimp Newsletter */
+
+#mc_embed_signup  {
+  background: transparent;
+  clear:left; 
+  width: 100%;
+  max-width:600px;
+}
+
+#mc_embed_signup h2 {
+  color: #fff !important;
+}
+
+#mc_embed_signup .button {
+  background-color: rgb(203, 53, 36) !important;
+  border-radius: 0 !important;
+}
+
 
 @media screen and (min-width: 1px) and (max-width: 788px) {
 	.container-three-sections {
