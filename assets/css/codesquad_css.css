@@ -751,6 +751,13 @@ p {
 	height: 280px;
 }
 
+.slantStudent3 {
+	background: url("../img/graduates/2022/2022testimonial_photo.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 280px;
+}
+
 .top-red-line {
 	height: 5px;
 	background-color: rgb(203, 53, 36);
