@@ -402,9 +402,9 @@ h5 {
 }
 .headlineTxt2 {
 	/* Sub-head */
-	font-size: 2.4vw;
+	/* font-size: 2.4vw; */
 	top: 52%;
-	left: 14%;
+	left: 34%;
 }
 .headlineTxtAbout {
 	top: 44%;
@@ -440,8 +440,8 @@ h5 {
 	left: 28%;
 }
 .headlineTxtHome {
-	top: 37%;
-	left: 7%;
+	top: 33%;
+	left: 23%;
 }
 .headlineTxtProj2 {
 	top: 3%;
