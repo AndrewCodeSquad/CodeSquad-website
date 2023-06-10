@@ -14,24 +14,30 @@
 			gtag("js", new Date());
 			gtag("config", "UA-9379866-2");
 		</script>
-		<title>Job Openings at CodeSquad</title>
+		<title>Sara Gunda</title>
 		<!-- Bootstrap core CSS -->
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="assets/css/lib/bootstrap.min.css"
+			href="../assets/css/lib/bootstrap.min.css"
 		/>
 		<!-- Custom CSS -->
 		<link
 			rel="stylesheet"
 			type="text/css"
-			href="assets/css/codesquad_css.css"
+			href="../assets/css/codesquad_css.css"
 		/>
+		<link rel="stylesheet" href="../assets/css/personal-page-style.css" />
 		<!-- Google Fonts -->
 		<link
 			rel="stylesheet"
 			href="https://fonts.googleapis.com/css?family=Lato:400,700"
 		/>
+		<!-- FontAwesome -->
+		<script
+			src="https://kit.fontawesome.com/f9739f7640.js"
+			crossorigin="anonymous"
+		></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<!-- Facebook Pixel Code -->
 		<script>
@@ -72,7 +78,24 @@
 	</head>
 
 	<body>
-		<div class="top-red-line"></div>
+		<!-- Recruiting banner -->
+		<div
+			class="alert recruitment-alert alert-dismissible text-center"
+			style="margin-bottom: 0"
+			role="alert"
+		>
+			<button
+				type="button"
+				class="close"
+				data-dismiss="alert"
+				aria-label="Close"
+			>
+				<span aria-hidden="true">&times;</span>
+			</button>
+			<a href="./project-night-2023.html"
+				>Register now for 2023 Project Night!</a
+			>
+		</div>
 
 		<!-- Begin Navbar -->
 		<nav class="navbar navbar-default">
@@ -91,18 +114,21 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="index.html">
+					<a class="navbar-brand" href="../index.html">
 						<!-- CodeSquad logo -->
-						<img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
+						<img
+							alt="CodeSquad"
+							src="../assets/img/CodeSquad-website-logo.png"
+						/>
 					</a>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">What we do</a></li>
-						<li><a href="businesses.html">For businesses</a></li>
-						<li><a href="students.html">For students</a></li>
+						<li><a href="../index.html">What we do</a></li>
+						<li><a href="../businesses.html">For businesses</a></li>
+						<li><a href="../students.html">For students</a></li>
 						<li class="dropdown active">
 							<a
 								href="#"
@@ -115,14 +141,14 @@
 								About Us<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu" id="cohortDropdown">
-								<li><a href="about-us.html">The CodeSquad Story</a></li>
-								<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-								<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-								<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-								<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-								<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-								<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
-								<li><a href="careers.html">Job Openings</a></li>
+								<li><a href="../about-us.html">The CodeSquad Story</a></li>
+								<li><a href="../cohort.html">Spring 2018 Cohort</a></li>
+								<li><a href="../cohort2019.html">Spring 2019 Cohort</a></li>
+								<li><a href="../cohort2020.html">Spring 2020 Cohort</a></li>
+								<li><a href="../cohort2021.html">Spring 2021 Cohort</a></li>
+								<li><a href="../cohort2022.html">Spring 2022 Cohort</a></li>
+								<li><a href="../cohort2023.html">Spring 2023 Cohort</a></li>
+								<li><a href="../careers.html">Job Openings</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
@@ -137,12 +163,14 @@
 								Get involved<span class="caret"></span>
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="students.html">Become a developer</a></li>
-								<li><a href="businesses.html">Host a CodeSquad intern</a></li>
-								<li><a href="volunteer.html">Volunteer</a></li>
+								<li><a href="../students.html">Become a developer</a></li>
+								<li>
+									<a href="../businesses.html">Host a CodeSquad intern</a>
+								</li>
+								<li><a href="../volunteer.html">Volunteer</a></li>
 							</ul>
 						</li>
-						<li><a href="donate.html">Donate</a></li>
+						<li><a href="../donate.html">Donate</a></li>
 					</ul>
 				</div>
 				<!-- /.navbar-collapse -->
@@ -151,96 +179,62 @@
 		</nav>
 		<!-- End Navbar -->
 
-		<!-- Main banner section -->
-		<div class="positionRel">
-			<img
-				src="assets/img/9484-crop.jpg"
-				width="1920"
-				class="img-responsive center-block"
-			/>
-			<div class="headlineTxt headlineTxtJobs center mobileHide">
-				Job Openings at CodeSquad
+		<div class="top-red-line"></div>
+
+		<div class="personal-page-body">
+			<h1 class="personal-page-title">Meet Sara Gunda</h1>
+			<div class="personal-page-coder-about">
+				<div class="personal-page-coder-image">
+					<!-- Change the img src -->
+					<img src="../assets/img/graduates/2023/sara.png"" alt=" headshot of
+					the person" />
+				</div>
+				<div class="personal-page-coder-info">
+					<!-- Change the city -->
+					<h2>Located in Boston</h2>
+					<!-- Add the LinkedIn link -->
+					<a href="http://www.linkedin.com/in/saragunda/" target="_blank"
+						><i class="fa-brands fa-linkedin"></i
+					></a>
+					<!-- Add the GitHub link -->
+					<a href="https://github.com/SaraGunda" target="_blank"
+						><i class="fa-brands fa-square-github"></i
+					></a>
+					<p>
+						Sara is a full-stack web developer with +12 years of nonprofit
+						administrative leadership experience, currently working in a
+						healthcare industry as an executive administrator and clinic
+						coordinator. On the weekend, she is a yoga teacher. Her personal
+						project, YogaMatch focuses on bringing yoga to all through a
+						customized yoga videos tailored to their needs that all can do from
+						home. Based on your answers to a questionnaire, you will be paired
+						with each segment of a playable yoga flow videos. Through Yoga
+						Match, Sara wants to spread the word that yoga is for everyone. Sara
+						wants to give back to her community and bring something significant
+						to those who are often unrepresented.
+					</p>
+					<!-- add a link to resume -->
+					<p class="personal-project-links">
+						<a
+							href="https://docs.google.com/document/d/1MhitvJvYVi68zUh3GoyjJGRkJdGvemK_K0homT2DqMk/edit?usp=sharing"
+							target="_blank"
+							>Resume</a
+						>
+					</p>
+				</div>
+			</div>
+			<div class="personal-page-coder-project">
+				<h2>Full-Stack Project</h2>
+				<!-- Update the href to the link of the personal project live page -->
+				<p class="personal-project-links">
+					<a href="">YogaMatch</a>
+				</p>
+				<!-- Once live links are updates, comment this p tag -->
+				<p>Coming Soon</p>
+				<!-- Update the src to the link of the personal project live page -->
+				<iframe title="Personal Project" src=""></iframe>
 			</div>
 		</div>
-		<div class="red-bar">
-			<div class="mobileShow">Job Openings</div>
-			<div class="mobileHide">Join our team and expand your impact</div>
-		</div>
-		<div>
-			<img
-				src="assets/img/arrow.png"
-				width="65"
-				height="40"
-				class="img-responsive center-block"
-			/>
-		</div>
-
-		<!-- Begin CodeSquad Story -->
-		<div class="container">
-			<p style="margin: 60px 0">
-				CodeSquad does not have any job openings at this time
-			</p>
-			<!-- <h3>
-				<a
-					href="https://docs.google.com/document/d/1dJrmSOWa0e7A3yvv7SMwnrLn57HG4Lc2/edit?usp=sharing&ouid=107170423933554390218&rtpof=true&sd=true"
-					target="_blank"
-					>Lead Teaching Fellow &amp; Curriculum Specialist</a
-				>
-			</h3>
-			<p>
-				CodeSquad is seeking a full-time Lead Teaching Fellow & Curriculum
-				Specialist to manage our teaching team, lead classes in modern web
-				development and empower our students to pursue a tech career.
-				<a
-					href="https://docs.google.com/document/d/1dJrmSOWa0e7A3yvv7SMwnrLn57HG4Lc2/edit?usp=sharing&ouid=107170423933554390218&rtpof=true&sd=true"
-					target="_blank"
-					>Read more...</a
-				>
-			</p> -->
-			<!-- <h3>
-				<a
-					href="https://docs.google.com/document/d/1irOa7zKXo8D36okPFrIWFCUC0tqvyk4U/edit?usp=sharing&ouid=107170423933554390218&rtpof=true&sd=true"
-					target="_blank"
-					>CodeSquad Teaching Fellow</a
-				>
-			</h3>
-			<p>
-				CodeSquad Teaching Fellows work part-time to train students in HTML,
-				CSS, JavaScript and the MERN stack, while building student confidence
-				and having fun.
-				<a
-					href="https://docs.google.com/document/d/1irOa7zKXo8D36okPFrIWFCUC0tqvyk4U/edit?usp=sharing&ouid=107170423933554390218&rtpof=true&sd=true"
-					target="_blank"
-					>Read more...</a
-				>
-			</p> -->
-			<!-- <h3>
-				<a
-					href="https://docs.google.com/document/d/1Ya0X1Uxh8wFovkJitGi81PwsIXCqMwZw/edit?usp=sharing&ouid=107170423933554390218&rtpof=true&sd=true"
-					target="_blank"
-					>Employment Coach</a
-				>
-			</h3>
-			<p>
-				CodeSquad seeks an Employment Coach to motivate and support our students
-				as they transition into a career in software.
-				<a
-					href="https://docs.google.com/document/d/1Ya0X1Uxh8wFovkJitGi81PwsIXCqMwZw/edit?usp=sharing&ouid=107170423933554390218&rtpof=true&sd=true"
-					target="_blank"
-					>Read more...</a
-				>
-			</p> -->
-			<!-- <h3>
-				<a href="assets/img/job-GrantWriter.pdf" target="_blank">Grant Writer</a>
-			</h3>
-			<p>
-				CodeSquad is seeking a part-time Grant Writer to support its mission to train adults from Boston's low-income
-				communities of color and help them launch new careers. Reporting to the Executive Director,
-				the Grant Writer will be responsible for identifying grant opportunities, drafting and editing proposals,
-				communicating with funders, and tracking compliance and performance against goals. <a href="assets/img/job-GrantWriter.pdf" target="_blank">Read more...</a>
-			</p> -->
-		</div>
-		<!-- End of container -->
 
 		<!-- Begin page footer -->
 		<footer>
@@ -258,9 +252,9 @@
 							<br />
 							<p class="footerHead">Quick Links</p>
 							<ul class="momentumUL">
-								<li><a href="index.html">What we do</a></li>
-								<li><a href="businesses.html">For businesses</a></li>
-								<li><a href="students.html">For students</a></li>
+								<li><a href="../index.html">What we do</a></li>
+								<li><a href="../businesses.html">For businesses</a></li>
+								<li><a href="../students.html">For students</a></li>
 								<li class="dropdown">
 									<a
 										href="#"
@@ -273,14 +267,14 @@
 										About Us<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu" id="cohortDropdown">
-										<li><a href="about-us.html">The CodeSquad Story</a></li>
-										<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-										<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-										<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-										<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-										<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-										<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
-										<li><a href="careers.html">Job Openings</a></li>
+										<li><a href="../about-us.html">The CodeSquad Story</a></li>
+										<li><a href="../cohort.html">Spring 2018 Cohort</a></li>
+										<li><a href="../cohort2019.html">Spring 2019 Cohort</a></li>
+										<li><a href="../cohort2020.html">Spring 2020 Cohort</a></li>
+										<li><a href="../cohort2021.html">Spring 2021 Cohort</a></li>
+										<li><a href="../cohort2022.html">Spring 2022 Cohort</a></li>
+										<li><a href="../cohort2023.html">Spring 2023 Cohort</a></li>
+										<li><a href="../careers.html">Job Openings</a></li>
 									</ul>
 								</li>
 								<li>
@@ -295,20 +289,20 @@
 										Get involved<span class="caret"></span>
 									</a>
 									<ul class="dropdown-menu">
-										<li><a href="students.html">Become a developer</a></li>
+										<li><a href="../students.html">Become a developer</a></li>
 										<li>
-											<a href="businesses.html">Host a CodeSquad intern</a>
+											<a href="../businesses.html">Host a CodeSquad intern</a>
 										</li>
-										<li><a href="volunteer.html">Volunteer</a></li>
+										<li><a href="../volunteer.html">Volunteer</a></li>
 									</ul>
 								</li>
-								<li><a href="donate.html">Donate</a></li>
+								<li><a href="../donate.html">Donate</a></li>
 							</ul>
 							<br />
 							<p class="footerHead">Join us on social media</p>
 							<a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
 								<img
-									src="assets/img/Facebook-logo3.png"
+									src="../assets/img/Facebook-logo3.png"
 									height="54"
 									width="54"
 									alt="Facebook logo"
@@ -318,14 +312,14 @@
 								href="https://www.linkedin.com/company/codesquad.org"
 								target="_blank"
 								><img
-									src="assets/img/LinkedInLogo.png"
+									src="../assets/img/LinkedInLogo.png"
 									height="54"
 									width="54"
 									alt="LinkedIn logo"
 							/></a>
 							<a href="https://www.instagram.com/codesquadpix/" target="_blank"
 								><img
-									src="assets/img/InstagramLogo.png"
+									src="../assets/img/InstagramLogo.png"
 									height="54"
 									width="54"
 									alt="Instagram logo"
@@ -501,7 +495,7 @@
 			crossorigin="anonymous"
 		></script>
 		<script
-			src="assets/js/lib/bootstrap.min.js"
+			src="../assets/js/lib/bootstrap.min.js"
 			type="text/javascript"
 		></script>
 	</body>
