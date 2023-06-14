@@ -1,641 +1,486 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-9379866-2"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
 
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-			gtag("config", "UA-9379866-2");
-		</script>
-		<title>Volunteer with CodeSquad</title>
-		<!-- Bootstrap core CSS -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/lib/bootstrap.min.css"
-		/>
-		<!-- Custom CSS -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/codesquad_css.css"
-		/>
-		<!-- Google Fonts -->
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Lato:400,700"
-		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Facebook Pixel Code -->
-		<script>
-			!(function (f, b, e, v, n, t, s) {
-				if (f.fbq) return;
-				n = f.fbq = function () {
-					n.callMethod
-						? n.callMethod.apply(n, arguments)
-						: n.queue.push(arguments);
-				};
-				if (!f._fbq) f._fbq = n;
-				n.push = n;
-				n.loaded = !0;
-				n.version = "2.0";
-				n.queue = [];
-				t = b.createElement(e);
-				t.async = !0;
-				t.src = v;
-				s = b.getElementsByTagName(e)[0];
-				s.parentNode.insertBefore(t, s);
-			})(
-				window,
-				document,
-				"script",
-				"https://connect.facebook.net/en_US/fbevents.js"
-			);
-			fbq("init", "638029117122317");
-			fbq("track", "PageView");
-		</script>
-		<noscript
-			><img
-				height="1"
-				width="1"
-				style="display: none"
-				src="https://www.facebook.com/tr?id=638029117122317&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Facebook Pixel Code -->
-	</head>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9379866-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
 
-	<body>
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "UA-9379866-2");
+	</script>
+	<title>Volunteer with CodeSquad</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/codesquad_css.css" />
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Facebook Pixel Code -->
+	<script>
+		!(function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod
+					? n.callMethod.apply(n, arguments)
+					: n.queue.push(arguments);
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = "2.0";
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s);
+		})(
+			window,
+			document,
+			"script",
+			"https://connect.facebook.net/en_US/fbevents.js"
+		);
+		fbq("init", "638029117122317");
+		fbq("track", "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display: none"
+			src="https://www.facebook.com/tr?id=638029117122317&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+</head>
+
+<body>
+	<div class="top-red-line"></div>
+
+	<!-- Navbar start -->
+	<nav class="navbar navbar-default">
+		<!-- Container class pulls content in from edges of page while remaining responsive -->
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<!-- CodeSquad logo -->
+					<img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
+				</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">What we do</a></li>
+					<li><a href="businesses.html">For businesses</a></li>
+					<li><a href="students.html">For students</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">About Us <span class="caret"></span></a>
+						<ul class="dropdown-menu" id="cohortDropdown">
+							<li><a href="about-us.html">The CodeSquad Story</a></li>
+							<li><a href="cohort.html">Spring 2018 Cohort</a></li>
+							<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
+							<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
+							<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
+							<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
+							<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
+							<li><a href="careers.html">Job Openings</a></li>
+						</ul>
+					</li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">Get involved <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="students.html">Become a developer</a></li>
+							<li><a href="businesses.html">Host a CodeSquad intern</a></li>
+							<li>
+								<a href="#">Volunteer<span class="sr-only">(current)</span></a>
+							</li>
+						</ul>
+					</li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<!-- Main banner section -->
+	<div class="positionRel">
+		<img src="assets/img/img_9533.jpg" width="1920" class="img-responsive center-block" />
+		<div class="headlineTxt headlineTxtVol mobileHide">Make an impact</div>
+	</div>
+	<div class="red-bar">
+		<div class="mobileShow">Make an impact</div>
+		<div class="mobileHide">
+			Build careers and empowerment through technology
+		</div>
+	</div>
+	<div>
+		<img src="assets/img/arrow.png" width="65" height="40" class="img-responsive center-block" />
+	</div>
+
+	<!-- Begin "Volunteer" section using Bootstrap cards -->
+	<h1 class="center">Volunteer with CodeSquad</h1>
+	<p class="center width60"></p>
+	<div class="row">
+		<div class="col-md-offset-1 col-md-5">
+			<!-- Begin column -->
+			<div class="card card-noBorder">
+				<div class="card-block">
+					<a href="https://forms.gle/9jNTj8q6jGCNAgV86" target="_blank"><img class="card-img-float img-responsive"
+							src="assets/img/peopleRedperson.jpg" width="30%" /></a>
+					<p class="card-title">Be an Advocate</p>
+					<p class="card-text">
+						<a href="https://forms.gle/9jNTj8q6jGCNAgV86" target="_blank">The Advocates Program</a>
+						connects volunteers with CodeSquad students and graduates for
+						single-session, 30-60 minute mentoring calls. Advocates are also
+						contacted occasionally for opportunities to serve on career
+						panels, conduct practice interviews, or join student-focused
+						skill-building events. Advocates are contacted as needed, and can
+						schedule their availability ahead of time.
+					</p>
+				</div>
+			</div>
+			<!-- End of card -->
+		</div>
+		<!-- End of column -->
+		<div class="col-md-5">
+			<!-- Begin column -->
+			<div class="card card-noBorder">
+				<div class="card-block">
+					<a href="https://forms.gle/U376XWeQedcy17JZA" target="_blank"><img class="card-img-float"
+							src="assets/img/teamOriented.png" width="30%" class="img-responsive" /></a>
+					<p class="card-title">Mentor a Graduate</p>
+					<p class="card-text">
+						The
+						<a href="https://forms.gle/U376XWeQedcy17JZA" target="_blank">Graduate Mentor Program</a>
+						connects individual volunteers and graduates to help develop
+						career goals, brainstorm next steps, and overcome "Impostor
+						Syndrome." While Advocates help out during single-session events,
+						each Mentor builds an ongoing relationship with an individual
+						graduate. Meetings happen weekly for the first month, then monthly
+						for the next five months.
+					</p>
+				</div>
+			</div>
+			<!-- End of card -->
+		</div>
+		<!-- End of column -->
+	</div>
+	<!-- End of row -->
+	<h1 class="center">We need your help! Sign up to find out more</h1>
+	<p class="center width60">
+		<a class="btnRed btn" href="https://forms.gle/9jNTj8q6jGCNAgV86" target="_blank">
+			<span id="btn1stLine">
+				Sign up to be a
+				<br />
+				CodeSquad Advocate
+			</span>
+		</a>
+	</p>
+
+	<!-- Thank you to our Volunteers -->
+	<div class="row">
+		<div class="col-sm 12">
+			<h1 class="center">Thank you to our Volunteers</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-12 col-md-4 text-center">
+			<p>
+				Arnulfo<br />
+				Ruth Agbagi <br />
+				Bob Airasian<br />
+				Dave Allan<br />
+				Cushing Anderson<br />
+				Ian Anderson<br />
+				Irving Angulo<br />
+				Ahmad Bashir<br />
+				Anthony Beckford<br />
+				Emily Belyea<br />
+				Hanna Gabrielle Bidon<br />
+				Christine Bird<br />
+				Clinton Blackburn<br />
+				Sara Bonner<br />
+				Bonnie Bluford<br />
+				Joe Bracken<br />
+				Laurence Bradford<br />
+				Chris Braiotta<br />
+				Caleb Brown<br />
+				Flordeliz Calderon<br />
+				Luis Castro<br />
+				Dave Chamberlain<br />
+				Ani Chan<br />
+				Hayley Cohen<br />
+				Katie Cohen<br />
+				Natalie Douglas<br />
+				Dianna Dunbar<br />
+				Anna Eilering<br />
+				Max Ettelson<br />
+				David Evans<br />
+				Andrew Francisque<br />
+				Clyde Freeman<br />
+				Lexi Galantino<br />
+				Asya Gelfand
+			</p>
+		</div>
+		<div class="col-sm-12 col-md-4 text-center">
+			<p>
+				Kevin Gigax<br />
+				Steve Gluckman<br />
+				Emily Nagle Green<br />
+				Sean Hafferty<br />
+				Amber Hampton<br />
+				Debbie Hellweg<br />
+				Tisha Hood<br />
+				Amal Hussein<br />
+				Schlaine Hutchins<br />
+				Greg Jastrab<br />
+				Kendra Jones<br />
+				Angel Juarbe<br />
+				Darlene Julien<br />
+				Caroline Kaufman<br />
+				Brian Kelly<br />
+				Mona Khan<br />
+				Doug Kurth<br />
+				Kristen Laird<br />
+				Denise Lam<br />
+				Lou LaRocca<br />
+				Kathleen Law<br />
+				Ketty Lezama<br />
+				Sam Li<br />
+				Ben Livermore<br />
+				Tom Long<br />
+				Esther Lumsdon<br />
+				Stefon Lyons<br />
+				Jack Magnusson<br />
+				John Maloney<br />
+				Sameer Manek<br />
+				Katherine Martinez<br />
+				Heidi Martinez<br />
+				Travis McGrath<br />
+				Sherry Mei
+			</p>
+		</div>
+		<div class="col-sm-12 col-md-4 text-center">
+			<p>
+				Mickey Monteiro<br />
+				Silvio Moreira<br />
+				Bryan Nadeau<br />
+				Rob Nice<br />
+				Katie Nierstheimer<br />
+				Khanh Ngo<br />
+				Ann Nguyen<br />
+				Dan Orzechowski<br />
+				Oriana Ott<br />
+				Shubham Patel<br />
+				Sonia Paulino<br />
+				Alexis Pouriet<br />
+				Brooke Rahn<br />
+				Sky Rubenstein<br />
+				Carina Saint Germain<br />
+				Jonathan Schwartz<br />
+				Kevin Scott<br />
+				Reneldy Senat<br />
+				Ronak Shah<br />
+				Darian Springer<br />
+				Zach Stahl<br />
+				Rob Sterner<br />
+				Padmaja Suren<br />
+				Leslie Swanson<br />
+				Shawn Szturma<br />
+				Kiki Taboh<br />
+				Dave Tavilla<br />
+				Matt Vasallo<br />
+				Isaiah Vertus<br />
+				Michelle Von Vogler<br />
+				Will Wen<br />
+				Mae Wendell<br />
+				Yu Wu
+			</p>
+		</div>
+	</div>
+
+	<!-- Begin page footer -->
+	<footer>
 		<div class="top-red-line"></div>
-
-		<!-- Navbar start -->
-		<nav class="navbar navbar-default">
-			<!-- Container class pulls content in from edges of page while remaining responsive -->
+		<div class="positionRel footerFont footerBak">
 			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button
-						type="button"
-						class="navbar-toggle collapsed"
-						data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1"
-						aria-expanded="false"
-					>
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						<!-- CodeSquad logo -->
-						<img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
-					</a>
-				</div>
-
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">What we do</a></li>
-						<li><a href="businesses.html">For businesses</a></li>
-						<li><a href="students.html">For students</a></li>
-						<li class="dropdown">
-							<a
-								href="#"
-								class="dropdown-toggle"
-								data-toggle="dropdown"
-								role="button"
-								aria-haspopup="true"
-								aria-expanded="false"
-								>About Us <span class="caret"></span
-							></a>
-							<ul class="dropdown-menu" id="cohortDropdown">
-								<li><a href="about-us.html">The CodeSquad Story</a></li>
-								<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-								<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-								<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-								<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-								<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-								<li><a href="careers.html">Job Openings</a></li>
-							</ul>
-						</li>
-						<li class="dropdown active">
-							<a
-								href="#"
-								class="dropdown-toggle"
-								data-toggle="dropdown"
-								role="button"
-								aria-haspopup="true"
-								aria-expanded="false"
-								>Get involved <span class="caret"></span
-							></a>
-							<ul class="dropdown-menu">
-								<li><a href="students.html">Become a developer</a></li>
-								<li><a href="businesses.html">Host a CodeSquad intern</a></li>
-								<li>
-									<a href="#"
-										>Volunteer<span class="sr-only">(current)</span></a
-									>
-								</li>
-							</ul>
-						</li>
-						<li><a href="donate.html">Donate</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
-			</div>
-			<!-- /.container-fluid -->
-		</nav>
-
-		<!-- Main banner section -->
-		<div class="positionRel">
-			<img
-				src="assets/img/img_9533.jpg"
-				width="1920"
-				class="img-responsive center-block"
-			/>
-			<div class="headlineTxt headlineTxtVol mobileHide">Make an impact</div>
-		</div>
-		<div class="red-bar">
-			<div class="mobileShow">Make an impact</div>
-			<div class="mobileHide">
-				Build careers and empowerment through technology
-			</div>
-		</div>
-		<div>
-			<img
-				src="assets/img/arrow.png"
-				width="65"
-				height="40"
-				class="img-responsive center-block"
-			/>
-		</div>
-
-		<!-- Begin "Volunteer" section using Bootstrap cards -->
-		<h1 class="center">Volunteer with CodeSquad</h1>
-		<p class="center width60"></p>
-		<div class="row">
-			<div class="col-md-offset-1 col-md-5">
-				<!-- Begin column -->
-				<div class="card card-noBorder">
-					<div class="card-block">
-						<a href="https://forms.gle/9jNTj8q6jGCNAgV86" target="_blank"
-							><img
-								class="card-img-float img-responsive"
-								src="assets/img/peopleRedperson.jpg"
-								width="30%"
-						/></a>
-						<p class="card-title">Be an Advocate</p>
-						<p class="card-text">
-							<a href="https://forms.gle/9jNTj8q6jGCNAgV86" target="_blank"
-								>The Advocates Program</a
-							>
-							connects volunteers with CodeSquad students and graduates for
-							single-session, 30-60 minute mentoring calls. Advocates are also
-							contacted occasionally for opportunities to serve on career
-							panels, conduct practice interviews, or join student-focused
-							skill-building events. Advocates are contacted as needed, and can
-							schedule their availability ahead of time.
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-md-offset-2">
+						<div class="footerLogo"></div>
+						<p>
+							CodeSquad is a nonprofit organization that trains talented
+							adults from low-income families to become full-stack developers
+							and launch a new career.
 						</p>
+						<br />
+						<p class="footerHead">Quick Links</p>
+						<ul class="momentumUL">
+							<li><a href="index.html">What we do</a></li>
+							<li><a href="businesses.html">For businesses</a></li>
+							<li><a href="students.html">For students</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">
+									About Us<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" id="cohortDropdown">
+									<li><a href="about-us.html">The CodeSquad Story</a></li>
+									<li><a href="cohort.html">Spring 2018 Cohort</a></li>
+									<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
+									<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
+									<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
+									<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
+									<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
+									<li><a href="careers.html">Job Openings</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">
+									Get involved<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="students.html">Become a developer</a></li>
+									<li>
+										<a href="businesses.html">Host a CodeSquad intern</a>
+									</li>
+									<li><a href="volunteer.html">Volunteer</a></li>
+								</ul>
+							</li>
+							<li><a href="donate.html">Donate</a></li>
+						</ul>
+						<br />
+						<p class="footerHead">Join us on social media</p>
+						<a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
+							<img src="assets/img/Facebook-logo3.png" height="54" width="54" alt="Facebook logo" />
+						</a>
+						<a href="https://www.linkedin.com/company/codesquad.org" target="_blank"><img
+								src="assets/img/LinkedInLogo.png" height="54" width="54" alt="LinkedIn logo" /></a>
+						<a href="https://www.instagram.com/codesquadpix/" target="_blank"><img src="assets/img/InstagramLogo.png"
+								height="54" width="54" alt="Instagram logo" /></a>
 					</div>
-				</div>
-				<!-- End of card -->
-			</div>
-			<!-- End of column -->
-			<div class="col-md-5">
-				<!-- Begin column -->
-				<div class="card card-noBorder">
-					<div class="card-block">
-						<a href="https://forms.gle/U376XWeQedcy17JZA" target="_blank"
-							><img
-								class="card-img-float"
-								src="assets/img/teamOriented.png"
-								width="30%"
-								class="img-responsive"
-						/></a>
-						<p class="card-title">Mentor a Graduate</p>
-						<p class="card-text">
-							The
-							<a href="https://forms.gle/U376XWeQedcy17JZA" target="_blank"
-								>Graduate Mentor Program</a
-							>
-							connects individual volunteers and graduates to help develop
-							career goals, brainstorm next steps, and overcome "Impostor
-							Syndrome." While Advocates help out during single-session events,
-							each Mentor builds an ongoing relationship with an individual
-							graduate. Meetings happen weekly for the first month, then monthly
-							for the next five months.
-						</p>
-					</div>
-				</div>
-				<!-- End of card -->
-			</div>
-			<!-- End of column -->
-		</div>
-		<!-- End of row -->
-		<h1 class="center">We need your help! Sign up to find out more</h1>
-		<p class="center width60">
-			<a
-				class="btnRed btn"
-				href="https://forms.gle/9jNTj8q6jGCNAgV86"
-				target="_blank"
-			>
-				<span id="btn1stLine">
-					Sign up to be a
-					<br />
-					CodeSquad Advocate
-				</span>
-			</a>
-		</p>
-
-		<!-- Thank you to our Volunteers -->
-		<div class="row">
-			<div class="col-sm 12">
-				<h1 class="center">Thank you to our Volunteers</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-12 col-md-4 text-center">
-				<p>
-					Arnulfo<br />
-					Ruth Agbagi <br />
-					Bob Airasian<br />
-					Dave Allan<br />
-					Cushing Anderson<br />
-					Ian Anderson<br />
-					Irving Angulo<br />
-					Ahmad Bashir<br />
-					Anthony Beckford<br />
-					Emily Belyea<br />
-					Hanna Gabrielle Bidon<br />
-					Christine Bird<br />
-					Clinton Blackburn<br />
-					Sara Bonner<br />
-					Bonnie Bluford<br />
-					Joe Bracken<br />
-					Laurence Bradford<br />
-					Chris Braiotta<br />
-					Caleb Brown<br />
-					Flordeliz Calderon<br />
-					Luis Castro<br />
-					Dave Chamberlain<br />
-					Ani Chan<br />
-					Hayley Cohen<br />
-					Katie Cohen<br />
-					Natalie Douglas<br />
-					Dianna Dunbar<br />
-					Anna Eilering<br />
-					Max Ettelson<br />
-					David Evans<br />
-					Andrew Francisque<br />
-					Clyde Freeman<br />
-					Lexi Galantino<br />
-					Asya Gelfand
-				</p>
-			</div>
-			<div class="col-sm-12 col-md-4 text-center">
-				<p>
-					Kevin Gigax<br />
-					Steve Gluckman<br />
-					Emily Nagle Green<br />
-					Sean Hafferty<br />
-					Amber Hampton<br />
-					Debbie Hellweg<br />
-					Tisha Hood<br />
-					Amal Hussein<br />
-					Schlaine Hutchins<br />
-					Greg Jastrab<br />
-					Kendra Jones<br />
-					Angel Juarbe<br />
-					Darlene Julien<br />
-					Caroline Kaufman<br />
-					Brian Kelly<br />
-					Mona Khan<br />
-					Doug Kurth<br />
-					Kristen Laird<br />
-					Denise Lam<br />
-					Lou LaRocca<br />
-					Kathleen Law<br />
-					Ketty Lezama<br />
-					Sam Li<br />
-					Ben Livermore<br />
-					Tom Long<br />
-					Esther Lumsdon<br />
-					Stefon Lyons<br />
-					Jack Magnusson<br />
-					John Maloney<br />
-					Sameer Manek<br />
-					Katherine Martinez<br />
-					Heidi Martinez<br />
-					Travis McGrath<br />
-					Sherry Mei
-				</p>
-			</div>
-			<div class="col-sm-12 col-md-4 text-center">
-				<p>
-					Mickey Monteiro<br />
-					Silvio Moreira<br />
-					Bryan Nadeau<br />
-					Rob Nice<br />
-					Katie Nierstheimer<br />
-					Khanh Ngo<br />
-					Ann Nguyen<br />
-					Dan Orzechowski<br />
-					Oriana Ott<br />
-					Shubham Patel<br />
-					Sonia Paulino<br />
-					Alexis Pouriet<br />
-					Brooke Rahn<br />
-					Sky Rubenstein<br />
-					Carina Saint Germain<br />
-					Jonathan Schwartz<br />
-					Kevin Scott<br />
-					Reneldy Senat<br />
-					Ronak Shah<br />
-					Darian Springer<br />
-					Zach Stahl<br />
-					Rob Sterner<br />
-					Padmaja Suren<br />
-					Leslie Swanson<br />
-					Shawn Szturma<br />
-					Kiki Taboh<br />
-					Dave Tavilla<br />
-					Matt Vasallo<br />
-					Isaiah Vertus<br />
-					Michelle Von Vogler<br />
-					Will Wen<br />
-					Mae Wendell<br />
-					Yu Wu
-				</p>
-			</div>
-		</div>
-
-		<!-- Begin page footer -->
-		<footer>
-			<div class="top-red-line"></div>
-			<div class="positionRel footerFont footerBak">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-md-4 col-md-offset-2">
-							<div class="footerLogo"></div>
-							<p>
-								CodeSquad is a nonprofit organization that trains talented
-								adults from low-income families to become full-stack developers
-								and launch a new career.
-							</p>
-							<br />
-							<p class="footerHead">Quick Links</p>
-							<ul class="momentumUL">
-								<li><a href="index.html">What we do</a></li>
-								<li><a href="businesses.html">For businesses</a></li>
-								<li><a href="students.html">For students</a></li>
-								<li class="dropdown">
-									<a
-										href="#"
-										class="dropdown-toggle"
-										data-toggle="dropdown"
-										role="button"
-										aria-haspopup="true"
-										aria-expanded="false"
-									>
-										About Us<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu" id="cohortDropdown">
-										<li><a href="about-us.html">The CodeSquad Story</a></li>
-										<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-										<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-										<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-										<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-										<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-										<li><a href="careers.html">Job Openings</a></li>
-									</ul>
-								</li>
-								<li>
-									<a
-										href="#"
-										class="dropdown-toggle"
-										data-toggle="dropdown"
-										role="button"
-										aria-haspopup="true"
-										aria-expanded="false"
-									>
-										Get involved<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a href="students.html">Become a developer</a></li>
-										<li>
-											<a href="businesses.html">Host a CodeSquad intern</a>
-										</li>
-										<li><a href="volunteer.html">Volunteer</a></li>
-									</ul>
-								</li>
-								<li><a href="donate.html">Donate</a></li>
-							</ul>
-							<br />
-							<p class="footerHead">Join us on social media</p>
-							<a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
-								<img
-									src="assets/img/Facebook-logo3.png"
-									height="54"
-									width="54"
-									alt="Facebook logo"
-								/>
-							</a>
-							<a
-								href="https://www.linkedin.com/company/codesquad.org"
-								target="_blank"
-								><img
-									src="assets/img/LinkedInLogo.png"
-									height="54"
-									width="54"
-									alt="LinkedIn logo"
-							/></a>
-							<a href="https://www.instagram.com/codesquadpix/" target="_blank"
-								><img
-									src="assets/img/InstagramLogo.png"
-									height="54"
-									width="54"
-									alt="Instagram logo"
-							/></a>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<!-- Begin Mailchimp Signup Form -->
-							<link
-								href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-								rel="stylesheet"
-								type="text/css"
-							/>
-							<div id="mc_embed_signup">
-								<form
-									action="https://codesquad.us2.list-manage.com/subscribe/post?u=364221539aba8d6ca0f5ae380&amp;id=3ce50926c4"
-									method="post"
-									id="mc-embedded-subscribe-form"
-									name="mc-embedded-subscribe-form"
-									class="validate"
-									target="_blank"
-									novalidate
-								>
-									<div id="mc_embed_signup_scroll">
-										<h2>Subscribe</h2>
-										<div class="indicates-required">
-											<span class="asterisk">*</span> indicates required
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-EMAIL"
-												>Email: <span class="asterisk">*</span>
-											</label>
-											<input
-												type="email"
-												value=""
-												name="EMAIL"
-												class="required email"
-												id="mce-EMAIL"
-											/>
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-FNAME"
-												>First name: <span class="asterisk">*</span>
-											</label>
-											<input
-												type="text"
-												value=""
-												name="FNAME"
-												class="required"
-												id="mce-FNAME"
-											/>
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-LNAME"
-												>Last name: <span class="asterisk">*</span>
-											</label>
-											<input
-												type="text"
-												value=""
-												name="LNAME"
-												class="required"
-												id="mce-LNAME"
-											/>
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-MMERGE6"
-												>Please choose one: <span class="asterisk">*</span>
-											</label>
-											<select name="MMERGE6" class="required" id="mce-MMERGE6">
-												<option value=""></option>
-												<option value="I'm looking to hire developers">
-													I'm looking to hire developers
-												</option>
-												<option value="I’d like to discuss a partnership">
-													I'd like to discuss a partnership
-												</option>
-												<option value="I'm interested in volunteering">
-													I'm interested in volunteering
-												</option>
-												<option
-													value="I'm interested in applying to the program"
-												>
-													I'm interested in applying to the program
-												</option>
-												<option value="I'm just here to support CodeSquad">
-													I'm just here to support CodeSquad
-												</option>
-											</select>
-										</div>
-										<div hidden="true">
-											<input type="hidden" name="tags" value="1287435" />
-										</div>
-										<div id="mce-responses" class="clear">
-											<div
-												class="response"
-												id="mce-error-response"
-												style="display: none"
-											></div>
-											<div
-												class="response"
-												id="mce-success-response"
-												style="display: none"
-											></div>
-										</div>
-										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div
-											style="position: absolute; left: -5000px"
-											aria-hidden="true"
-										>
-											<input
-												type="text"
-												name="b_364221539aba8d6ca0f5ae380_3ce50926c4"
-												tabindex="-1"
-												value=""
-											/>
-										</div>
-										<div class="clear">
-											<input
-												type="submit"
-												value="Subscribe"
-												name="subscribe"
-												id="mc-embedded-subscribe"
-												class="button"
-											/>
-										</div>
+					<div class="col-xs-12 col-md-6">
+						<!-- Begin Mailchimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
+						<div id="mc_embed_signup">
+							<form
+								action="https://codesquad.us2.list-manage.com/subscribe/post?u=364221539aba8d6ca0f5ae380&amp;id=3ce50926c4"
+								method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+								target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<h2>Subscribe</h2>
+									<div class="indicates-required">
+										<span class="asterisk">*</span> indicates required
 									</div>
-								</form>
-							</div>
-							<script
-								type="text/javascript"
-								src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-							></script>
-							<script type="text/javascript">
-								(function ($) {
-									window.fnames = new Array();
-									window.ftypes = new Array();
-									fnames[0] = "EMAIL";
-									ftypes[0] = "email";
-									fnames[1] = "FNAME";
-									ftypes[1] = "text";
-									fnames[2] = "LNAME";
-									ftypes[2] = "text";
-									fnames[3] = "MMERGE3";
-									ftypes[3] = "text";
-									fnames[4] = "MMERGE4";
-									ftypes[4] = "text";
-									fnames[6] = "MMERGE6";
-									ftypes[6] = "dropdown";
-									fnames[5] = "MMERGE5";
-									ftypes[5] = "text";
-								})(jQuery);
-								var $mcj = jQuery.noConflict(true);
-							</script>
-							<!--End mc_embed_signup-->
+									<div class="mc-field-group">
+										<label for="mce-EMAIL">Email: <span class="asterisk">*</span>
+										</label>
+										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-FNAME">First name: <span class="asterisk">*</span>
+										</label>
+										<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" />
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-LNAME">Last name: <span class="asterisk">*</span>
+										</label>
+										<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" />
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-MMERGE6">Please choose one: <span class="asterisk">*</span>
+										</label>
+										<select name="MMERGE6" class="required" id="mce-MMERGE6">
+											<option value=""></option>
+											<option value="I'm looking to hire developers">
+												I'm looking to hire developers
+											</option>
+											<option value="I’d like to discuss a partnership">
+												I'd like to discuss a partnership
+											</option>
+											<option value="I'm interested in volunteering">
+												I'm interested in volunteering
+											</option>
+											<option value="I'm interested in applying to the program">
+												I'm interested in applying to the program
+											</option>
+											<option value="I'm just here to support CodeSquad">
+												I'm just here to support CodeSquad
+											</option>
+										</select>
+									</div>
+									<div hidden="true">
+										<input type="hidden" name="tags" value="1287435" />
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display: none"></div>
+										<div class="response" id="mce-success-response" style="display: none"></div>
+									</div>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px" aria-hidden="true">
+										<input type="text" name="b_364221539aba8d6ca0f5ae380_3ce50926c4" tabindex="-1" value="" />
+									</div>
+									<div class="clear">
+										<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+									</div>
+								</div>
+							</form>
 						</div>
+						<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+						<script type="text/javascript">
+							(function ($) {
+								window.fnames = new Array();
+								window.ftypes = new Array();
+								fnames[0] = "EMAIL";
+								ftypes[0] = "email";
+								fnames[1] = "FNAME";
+								ftypes[1] = "text";
+								fnames[2] = "LNAME";
+								ftypes[2] = "text";
+								fnames[3] = "MMERGE3";
+								ftypes[3] = "text";
+								fnames[4] = "MMERGE4";
+								ftypes[4] = "text";
+								fnames[6] = "MMERGE6";
+								ftypes[6] = "dropdown";
+								fnames[5] = "MMERGE5";
+								ftypes[5] = "text";
+							})(jQuery);
+							var $mcj = jQuery.noConflict(true);
+						</script>
+						<!--End mc_embed_signup-->
 					</div>
-					<!-- End row -->
 				</div>
-				<!-- End container -->
+				<!-- End row -->
 			</div>
-			<!-- End of <div> with position "relative" -->
-			<div class="positionRel">
-				<p style="text-align: right">
-					Copyright &copy; CodeSquad 2018-2023. All rights reserved.
-				</p>
-			</div>
-		</footer>
-		<!-- End page footer -->
+			<!-- End container -->
+		</div>
+		<!-- End of <div> with position "relative" -->
+		<div class="positionRel">
+			<p style="text-align: right">
+				Copyright &copy; CodeSquad 2018-2023. All rights reserved.
+			</p>
+		</div>
+	</footer>
+	<!-- End page footer -->
 
-		<!-- jQuery link & Bootstrap JS link -->
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.min.js"
-			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="assets/js/lib/bootstrap.min.js"
-			type="text/javascript"
-		></script>
-	</body>
+	<!-- jQuery link & Bootstrap JS link -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="assets/js/lib/bootstrap.min.js" type="text/javascript"></script>
+</body>
+
 </html>
