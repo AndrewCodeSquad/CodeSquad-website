@@ -1,815 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id=UA-9379866-2"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag("js", new Date());
-			gtag("config", "UA-9379866-2");
-		</script>
-		<title>The CodeSquad Story</title>
-		<!-- Bootstrap core CSS -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/lib/bootstrap.min.css"
-		/>
-		<!-- Custom CSS -->
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="assets/css/codesquad_css.css"
-		/>
-		<!-- Google Fonts -->
-		<link
-			rel="stylesheet"
-			href="https://fonts.googleapis.com/css?family=Lato:400,700"
-		/>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Facebook Pixel Code -->
-		<script>
-			!(function (f, b, e, v, n, t, s) {
-				if (f.fbq) return;
-				n = f.fbq = function () {
-					n.callMethod
-						? n.callMethod.apply(n, arguments)
-						: n.queue.push(arguments);
-				};
-				if (!f._fbq) f._fbq = n;
-				n.push = n;
-				n.loaded = !0;
-				n.version = "2.0";
-				n.queue = [];
-				t = b.createElement(e);
-				t.async = !0;
-				t.src = v;
-				s = b.getElementsByTagName(e)[0];
-				s.parentNode.insertBefore(t, s);
-			})(
-				window,
-				document,
-				"script",
-				"https://connect.facebook.net/en_US/fbevents.js"
-			);
-			fbq("init", "638029117122317");
-			fbq("track", "PageView");
-		</script>
-		<noscript
-			><img
-				height="1"
-				width="1"
-				style="display: none"
-				src="https://www.facebook.com/tr?id=638029117122317&ev=PageView&noscript=1"
-		/></noscript>
-		<!-- End Facebook Pixel Code -->
-	</head>
 
-	<body>
-		<div class="top-red-line"></div>
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9379866-2"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag("js", new Date());
+		gtag("config", "UA-9379866-2");
+	</script>
+	<title>The CodeSquad Story</title>
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css" />
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/codesquad_css.css" />
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Facebook Pixel Code -->
+	<script>
+		!(function (f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function () {
+				n.callMethod
+					? n.callMethod.apply(n, arguments)
+					: n.queue.push(arguments);
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = "2.0";
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s);
+		})(
+			window,
+			document,
+			"script",
+			"https://connect.facebook.net/en_US/fbevents.js"
+		);
+		fbq("init", "638029117122317");
+		fbq("track", "PageView");
+	</script>
+	<noscript><img height="1" width="1" style="display: none"
+			src="https://www.facebook.com/tr?id=638029117122317&ev=PageView&noscript=1" /></noscript>
+	<!-- End Facebook Pixel Code -->
+</head>
 
-		<!-- Begin Navbar -->
-		<nav class="navbar navbar-default">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button
-						type="button"
-						class="navbar-toggle collapsed"
-						data-toggle="collapse"
-						data-target="#bs-example-navbar-collapse-1"
-						aria-expanded="false"
-					>
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">
-						<!-- CodeSquad logo -->
-						<img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
-					</a>
-				</div>
+<body>
+	<div class="top-red-line"></div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="index.html">What we do</a></li>
-						<li><a href="businesses.html">For businesses</a></li>
-						<li><a href="students.html">For students</a></li>
-						<li class="dropdown active">
-							<a
-								href="#"
-								class="dropdown-toggle"
-								data-toggle="dropdown"
-								role="button"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								About Us<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu" id="cohortDropdown">
-								<li><a href="about-us.html">The CodeSquad Story</a></li>
-								<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-								<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-								<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-								<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-								<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-								<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
-								<li><a href="careers.html">Job Openings</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a
-								href="#"
-								class="dropdown-toggle"
-								data-toggle="dropdown"
-								role="button"
-								aria-haspopup="true"
-								aria-expanded="false"
-							>
-								Get involved<span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="students.html">Become a developer</a></li>
-								<li><a href="businesses.html">Host a CodeSquad intern</a></li>
-								<li><a href="volunteer.html">Volunteer</a></li>
-							</ul>
-						</li>
-						<li><a href="donate.html">Donate</a></li>
-					</ul>
-				</div>
-				<!-- /.navbar-collapse -->
+	<!-- Begin Navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="index.html">
+					<!-- CodeSquad logo -->
+					<img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
+				</a>
 			</div>
-			<!-- /.container-fluid -->
-		</nav>
-		<!-- End Navbar -->
 
-		<!-- Main banner section -->
-		<div class="positionRel">
-			<img
-				src="assets/img/DSC_3558.jpg"
-				width="1920"
-				class="img-responsive center-block"
-			/>
-			<div class="headlineTxt headlineTxtAbout center mobileHide">
-				The CodeSquad Story
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">What we do</a></li>
+					<li><a href="businesses.html">For businesses</a></li>
+					<li><a href="students.html">For students</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							About Us<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" id="cohortDropdown">
+							<li><a href="about-us.html">The CodeSquad Story</a></li>
+							<li><a href="cohort.html">Spring 2018 Cohort</a></li>
+							<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
+							<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
+							<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
+							<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
+							<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
+							<li><a href="careers.html">Job Openings</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+							aria-expanded="false">
+							Get involved<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="students.html">Become a developer</a></li>
+							<li><a href="businesses.html">Host a CodeSquad intern</a></li>
+							<li><a href="volunteer.html">Volunteer</a></li>
+						</ul>
+					</li>
+					<li><a href="donate.html">Donate</a></li>
+				</ul>
 			</div>
+			<!-- /.navbar-collapse -->
 		</div>
-		<div class="red-bar">
-			<div class="mobileShow">The CodeSquad story</div>
-			<div class="mobileHide">Building a new pipeline of technology talent</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!-- End Navbar -->
+
+	<!-- Main banner section -->
+	<div class="positionRel">
+		<img src="assets/img/DSC_3558.jpg" width="1920" class="img-responsive center-block" />
+		<div class="headlineTxt headlineTxtAbout center mobileHide">
+			The CodeSquad Story
 		</div>
-		<div>
-			<img
-				src="assets/img/arrow.png"
-				width="65"
-				height="40"
-				class="img-responsive center-block"
-			/>
-		</div>
+	</div>
+	<div class="red-bar">
+		<div class="mobileShow">The CodeSquad story</div>
+		<div class="mobileHide">Building a new pipeline of technology talent</div>
+	</div>
+	<div>
+		<img src="assets/img/arrow.png" width="65" height="40" class="img-responsive center-block" />
+	</div>
 
-		<!-- Begin CodeSquad Story -->
-		<div class="container center">
-			<h1>We see three challenges</h1>
+	<!-- Begin CodeSquad Story -->
+	<div class="container center">
+		<h1>We see three challenges</h1>
 
-			<!-- <div class="width80 center"> -->
-			<p class="width80 center">
-				CodeSquad sees three challenges: the need for good jobs, the need for
-				good programmers, and the need for diversity in tech. The need for good
-				jobs is well-established, with
-				<a
-					href="https://www.boston.com/news/local-news/2016/03/15/nearly-half-of-boston-residents-make-less-than-35000-a-year"
-					target="_blank"
-					>one study</a
-				>
-				reporting that nearly half of Boston residents earn less than $35,000
-				per year. But Boston companies also need IT talent, in particular
-				software developers. A
-				<a
-					href="http://skill-works.org/documents/BBJViewPointLtEAug2017.pdf"
-					target="_blank"
-					>2017 survey</a
-				>
-				by SkillWorks and The Boston Foundation found that for every 17 job
-				openings in IT in Greater Boston, there was only ONE qualified
-				applicant. Nationwide, the US Bureau of Labor Statistics forecasts 1.3
-				million more IT jobs by 2026, and
-				<a
-					href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
-					target="_blank"
-					>software jobs will increase by 24%</a
-				>
-				(more than triple average job growth). Meanwhile the tech workforce is
-				95% white and 76% male, denying many companies the benefits of a diverse
-				workforce (more in this
-				<a
-					href="https://www.atlassian.com/diversity/survey/2018"
-					target="_blank"
-					>2018 report</a
-				>). In response to these challenges, CodeSquad has built a training
-				program for talented, low-income adults, particularly people of color,
-				to become full-stack web developers and launch a new career.
-			</p>
+		<!-- <div class="width80 center"> -->
+		<p class="width80 center">
+			CodeSquad sees three challenges: the need for good jobs, the need for
+			good programmers, and the need for diversity in tech. The need for good
+			jobs is well-established, with
+			<a href="https://www.boston.com/news/local-news/2016/03/15/nearly-half-of-boston-residents-make-less-than-35000-a-year"
+				target="_blank">one study</a>
+			reporting that nearly half of Boston residents earn less than $35,000
+			per year. But Boston companies also need IT talent, in particular
+			software developers. A
+			<a href="http://skill-works.org/documents/BBJViewPointLtEAug2017.pdf" target="_blank">2017 survey</a>
+			by SkillWorks and The Boston Foundation found that for every 17 job
+			openings in IT in Greater Boston, there was only ONE qualified
+			applicant. Nationwide, the US Bureau of Labor Statistics forecasts 1.3
+			million more IT jobs by 2026, and
+			<a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm"
+				target="_blank">software jobs will increase by 24%</a>
+			(more than triple average job growth). Meanwhile the tech workforce is
+			95% white and 76% male, denying many companies the benefits of a diverse
+			workforce (more in this
+			<a href="https://www.atlassian.com/diversity/survey/2018" target="_blank">2018 report</a>). In response to these
+			challenges, CodeSquad has built a training
+			program for talented, low-income adults, particularly people of color,
+			to become full-stack web developers and launch a new career.
+		</p>
 
-			<!-- Links to CodeSquad media coverage -->
-			<h1 class="center">Media coverage</h1>
-			<div class="row">
-				<div class="col-xs-12 col-md-3 col-md-offset-1">
-					<div class="card">
-						<div class="card-block">
-							<a
-								href="https://www.wgbh.org/news/the-big-quit/bianca-blakesley"
-								target="_blank"
-								><img
-									src="assets/img/BiancaWGBH.jfif"
-									alt="Boston Neighborhood Network Media"
-									width="250"
-							/></a>
-							<p class="card-text">
-								Learn how a therapist became a coder in WGBH's "The Big Quit"
-								(October 2021)
-							</p>
-							<p class="card-text">
-								<a
-									href="https://www.wgbh.org/news/the-big-quit/bianca-blakesley"
-									target="_blank"
-									>Read article</a
-								>
-								or
-								<a
-									href="https://www.youtube.com/watch?v=ccNjXCTvz3s"
-									target="_blank"
-									>watch video</a
-								>
-							</p>
-						</div>
-						<!-- End of card block -->
-					</div>
-					<!-- End of card -->
-				</div>
-				<!-- End of column -->
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<div class="card-block">
-							<a href="https://bnnmedia.org/" target="_blank"
-								><img
-									src="assets/img/BNNmedia.png"
-									alt="Boston Neighborhood Network Media"
-									width="250"
-							/></a>
-							<p class="card-text">
-								Andrew Ott &amp; Michelle Von Vogler were interviewed on
-								<em>Now & Then with Glenn</em> on WBCA 102.9 FM, Boston's
-								community radio (October 2019).
-							</p>
-							<p class="card-text">
-								<a href="assets/audio/NowAndThen.mp3" target="_blank"
-									>Click to play</a
-								>
-							</p>
-						</div>
-						<!-- End of card block -->
-					</div>
-					<!-- End of card -->
-				</div>
-				<!-- End of column -->
-				<div class="col-xs-12 col-md-3">
-					<div class="card">
-						<div class="card-block">
-							<a href="https://soundcloud.com/user-743257536" target="_blank"
-								><img
-									src="assets/img/PowerOfGood.jpg"
-									alt="Power of Good podcast logo"
-									width="67"
-							/></a>
-							<p class="card-text">
-								CodeSquad ED Andrew Ott was interviewed on
-								<em>The Power of Good</em>, a podcast series hosted by Jake
-								Murray (2017).
-							</p>
-							<p class="card-text">
-								<a
-									href="https://soundcloud.com/user-743257536/power-of-good-14-codesquad"
-									target="_blank"
-									>Click to play</a
-								>
-							</p>
-						</div>
-						<!-- End of card block -->
-					</div>
-					<!-- End of card -->
-				</div>
-				<!-- End of column -->
-			</div>
-			<!-- End of row -->
-
-			<h1 class="center">Newsletter</h1>
-			<div class="flexContainer">
-				<div class="card flexChild flexCol">
+		<!-- Links to CodeSquad media coverage -->
+		<h1 class="center">Media coverage</h1>
+		<div class="row">
+			<div class="col-xs-12 col-md-3 col-md-offset-1">
+				<div class="card">
 					<div class="card-block">
-						<a href="newsletter2023yearEnd.html" target="_blank">
-							<img
-								src="assets/img/newsletter2023yearEnd.jpg"
-								alt="CodeSquad News header"
-								width="250"
-							/>
-						</a>
+						<a href="https://www.wgbh.org/news/the-big-quit/bianca-blakesley" target="_blank"><img
+								src="assets/img/BiancaWGBH.jfif" alt="Boston Neighborhood Network Media" width="250" /></a>
 						<p class="card-text">
-							CodeSquad: Unlocking potential with your support
+							Learn how a therapist became a coder in WGBH's "The Big Quit"
+							(October 2021)
 						</p>
 						<p class="card-text">
-							<a href="newsletter2023yearEnd.html" target="_blank">Read newsletter</a>
-						</p>
-					</div>
-					<div class="card-block">
-						<a href="newsletterFY23Q4.pdf" target="_blank">
-							<img
-								src="assets/img/newsletter-FY24Q4-header.png"
-								alt="CodeSquad News header"
-								width="250"
-							/>
-						</a>
-						<p class="card-text">
-							Spring 2023: Project Night.. and new React training
-						</p>
-						<p class="card-text">
-							<a href="newsletterFY23Q4.pdf" target="_blank">Read newsletter</a>
-						</p>
-					</div>
-					<div class="card-block">
-						<a href="newsletter2022Fall.pdf" target="_blank">
-							<img
-								src="assets/img/2022-11-Header.png"
-								alt="CodeSquad News header"
-								width="250"
-							/>
-						</a>
-						<p class="card-text">Fall 2022: Early successes for recent grads</p>
-						<p class="card-text">
-							<a href="newsletter2022Fall.pdf" target="_blank"
-								>Read newsletter</a
-							>
-						</p>
-					</div>
-					<!-- End of card block -->
-					<div class="card-block">
-						<a href="newsletter2021Fall.html">
-							<img
-								src="assets/img/2021AppealHeader.png"
-								alt="CodeSquad News header"
-								width="250"
-							/>
-						</a>
-						<p class="card-text">
-							Fall 2021: graduate, donor and staff testimonials
-						</p>
-						<p class="card-text">
-							<a href="newsletter2021Fall.html">Read newsletter</a>
+							<a href="https://www.wgbh.org/news/the-big-quit/bianca-blakesley" target="_blank">Read article</a>
+							or
+							<a href="https://www.youtube.com/watch?v=ccNjXCTvz3s" target="_blank">watch video</a>
 						</p>
 					</div>
 					<!-- End of card block -->
 				</div>
 				<!-- End of card -->
 			</div>
-
-			<h1 class="center">Who we are</h1>
-
-			<div class="row">
-				<div class="col-xs-12 col-md-4">
-					<div class="card card-noBorder">
-						<div class="card-title center">
-							Andrew Ott <br />
-							<span class="card-subhead">Executive Director</span>
-						</div>
-						<p class="card-text center">
-							<a href="http://www.andrewott.com">Andrew</a> is a business and
-							nonprofit leader with over 15 years experience in website
-							architecture, business development and social entrepreneurship. He
-							has built websites that showcase deep video content, drive new
-							revenue and solidify brands. In 2009, he was nominated for an Emmy
-							Award for a website built for PBS Frontline. Andrew has a master's
-							in public administration from Harvard Kennedy School.
+			<!-- End of column -->
+			<div class="col-xs-12 col-md-3">
+				<div class="card">
+					<div class="card-block">
+						<a href="https://bnnmedia.org/" target="_blank"><img src="assets/img/BNNmedia.png"
+								alt="Boston Neighborhood Network Media" width="250" /></a>
+						<p class="card-text">
+							Andrew Ott &amp; Michelle Von Vogler were interviewed on
+							<em>Now & Then with Glenn</em> on WBCA 102.9 FM, Boston's
+							community radio (October 2019).
+						</p>
+						<p class="card-text">
+							<a href="assets/audio/NowAndThen.mp3" target="_blank">Click to play</a>
 						</p>
 					</div>
-					<!-- End of card -->
+					<!-- End of card block -->
 				</div>
-				<!-- End of column -->
-				<div class="col-xs-12 col-md-4">
-					<div class="card card-noBorder">
-						<div class="card-title center">
-							Ben Livermore <br />
-							<span class="card-subhead">Technical Director</span>
-						</div>
-						<p class="card-text center">
-							Ben has been a software engineer for 15 years, and has led teams
-							of web developers for large 5000-person corporations and for tiny
-							four-person startups. He has his master's in education from
-							Harvard Graduate School of Education and has taught classes on
-							test-driven development, pair programming, Agile management and
-							best practices in web development.
-						</p>
-					</div>
-					<!-- End of Ben Livermore card -->
-				</div>
-				<!-- End of column -->
-				<div class="col-xs-12 col-md-4">
-					<!-- Begin Leslie column -->
-					<div class="card card-noBorder">
-						<div class="card-title center">
-							Leslie Swanson <br />
-							<span class="card-subhead">Board Member</span>
-						</div>
-						<p class="card-text center">
-							Leslie Swanson is President and CEO of eXalt Solutions, a leading
-							cloud platform for B2B sales. She has founded three startups:
-							Vigilant Networks, a network monitoring company sold to Gen-Tek;
-							Expert Views, a CAE/CAD/CAM database company sold to RR Donnelley;
-							and eXalt Solutions. Leslie has a passion for metadata and
-							rules-based software and has won numerous patents
-							<a
-								data-toggle="collapse"
-								href="#leslieOver"
-								aria-expanded="false"
-								aria-controls="leslieOver"
-							>
-								...
-							</a>
-						</p>
-						<div class="collapse center pOverflow" id="leslieOver">
-							in network monitoring and data management. One of the earliest
-							adopters of outsourcing for business processes (BPO), Leslie is
-							excited about the future of robotic process automation and
-							artificial intelligence within the enterprise. After 30 years in
-							technology, Leslie is committed to growing diversity in the tech
-							sector. Her favorite charity is CodeSquad.
-						</div>
-					</div>
-					<!-- End of card -->
-				</div>
-				<!-- End of column -->
+				<!-- End of card -->
 			</div>
-			<!-- End of row -->
-			<div class="row">
-				<!-- Begin second row -->
-				<div class="col-xs-12 col-md-4">
-					<div class="card card-noBorder">
-						<div class="card-title center">
-							Arvind Krishnamurthy <br />
-							<span class="card-subhead">Board Member</span>
-						</div>
-						<p class="card-text center">
-							Arvind is an insurance executive with over 20 years of experience
-							in transactions and acquisitions. He is President of Allianz
-							Reinsurance Management Services and Head of Transactions for
-							Allianz Reinsurance America. Previously he was with Berkshire
-							Hathaway Reinsurance in a variety of roles including as Director
-							of a number of its insurance subsidiaries. Arvind has an MBA from
-							Columbia Business School and
-							<a
-								data-toggle="collapse"
-								href="#arvindOver"
-								aria-expanded="false"
-								aria-controls="arvindOver"
-							>
-								...
-							</a>
+			<!-- End of column -->
+			<div class="col-xs-12 col-md-3">
+				<div class="card">
+					<div class="card-block">
+						<a href="https://soundcloud.com/user-743257536" target="_blank"><img src="assets/img/PowerOfGood.jpg"
+								alt="Power of Good podcast logo" width="67" /></a>
+						<p class="card-text">
+							CodeSquad ED Andrew Ott was interviewed on
+							<em>The Power of Good</em>, a podcast series hosted by Jake
+							Murray (2017).
 						</p>
-						<div class="collapse center pOverflow" id="arvindOver">
-							an MPA from Harvard Kennedy School. He has passion for helping
-							disadvantaged individuals achieve their educational goals. To that
-							end, he has been a volunteer with Year-Up for several years and is
-							currently an advisor with Verto Fund.
-						</div>
-					</div>
-					<!-- End of card -->
-				</div>
-				<!-- End of column -->
-				<div class="col-xs-12 col-md-4">
-					<div class="card card-noBorder">
-						<div class="card-title center">
-							Luis Castro <br />
-							<span class="card-subhead">Board Member</span>
-						</div>
-						<p class="card-text center">
-							Luis has 15 years of experience in media and entertainment, with a
-							focus on cultivating diverse creative talent and executives. He
-							most recently served as Acting Commissioner of the NYC Mayor's
-							Office of Media &amp; Entertainment, where he oversaw a $30
-							million agency responsible for promoting film, television and
-							theatre production in New York. Prior to that he ran major talent
-							and artist-support
-							<a
-								data-toggle="collapse"
-								href="#luisOver"
-								aria-expanded="false"
-								aria-controls="luisOver"
-							>
-								...
-							</a>
-						</p>
-						<div class="collapse center pOverflow" id="luisOver">
-							initiatives for HBO in Los Angeles and Time Warner in New York.
-							Earlier in his career, working at the NYC Partnership, he built
-							public-private alliances between leading New York corporations,
-							the public school system, and community groups.
-						</div>
-					</div>
-					<!-- End of card -->
-				</div>
-				<!-- End of column -->
-				<div class="col-xs-12 col-md-4">
-					<!-- Begin JAS column -->
-					<div class="card card-noBorder">
-						<div class="card-title center">
-							Will Wen <br />
-							<span class="card-subhead">Technical Advisor</span>
-						</div>
-						<p class="card-text center">
-							Will is a software developer with strengths in full-stack
-							development and data engineering. His life's goal is to empower
-							those around him through software. In 2017, Will received his
-							bachelor's in computer science from Worcester Polytechnic
-							Institute. In that same year Will began volunteering with
-							CodeSquad, and has served in critical roles as classroom
-							instructor, mentor and technical advisor.
+						<p class="card-text">
+							<a href="https://soundcloud.com/user-743257536/power-of-good-14-codesquad" target="_blank">Click to
+								play</a>
 						</p>
 					</div>
-					<!-- End of JAS card -->
+					<!-- End of card block -->
 				</div>
-				<!-- End of JAS column -->
+				<!-- End of card -->
 			</div>
-			<!-- End second row -->
+			<!-- End of column -->
 		</div>
-		<!-- End of container -->
+		<!-- End of row -->
 
-		<!-- Begin page footer -->
-		<footer>
-			<div class="top-red-line"></div>
-			<div class="positionRel footerFont footerBak">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xs-12 col-md-4 col-md-offset-2">
-							<div class="footerLogo"></div>
-							<p>
-								CodeSquad is a nonprofit organization that trains talented
-								adults from low-income families to become full-stack developers
-								and launch a new career.
-							</p>
-							<br />
-							<p class="footerHead">Quick Links</p>
-							<ul class="momentumUL">
-								<li><a href="index.html">What we do</a></li>
-								<li><a href="businesses.html">For businesses</a></li>
-								<li><a href="students.html">For students</a></li>
-								<li class="dropdown">
-									<a
-										href="#"
-										class="dropdown-toggle"
-										data-toggle="dropdown"
-										role="button"
-										aria-haspopup="true"
-										aria-expanded="false"
-									>
-										About Us<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu" id="cohortDropdown">
-										<li><a href="about-us.html">The CodeSquad Story</a></li>
-										<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-										<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-										<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-										<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-										<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-										<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
-										<li><a href="careers.html">Job Openings</a></li>
-									</ul>
-								</li>
-								<li>
-									<a
-										href="#"
-										class="dropdown-toggle"
-										data-toggle="dropdown"
-										role="button"
-										aria-haspopup="true"
-										aria-expanded="false"
-									>
-										Get involved<span class="caret"></span>
-									</a>
-									<ul class="dropdown-menu">
-										<li><a href="students.html">Become a developer</a></li>
-										<li>
-											<a href="businesses.html">Host a CodeSquad intern</a>
-										</li>
-										<li><a href="volunteer.html">Volunteer</a></li>
-									</ul>
-								</li>
-								<li><a href="donate.html">Donate</a></li>
-							</ul>
-							<br />
-							<p class="footerHead">Join us on social media</p>
-							<a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
-								<img
-									src="assets/img/Facebook-logo3.png"
-									height="54"
-									width="54"
-									alt="Facebook logo"
-								/>
-							</a>
-							<a
-								href="https://www.linkedin.com/company/codesquad.org"
-								target="_blank"
-								><img
-									src="assets/img/LinkedInLogo.png"
-									height="54"
-									width="54"
-									alt="LinkedIn logo"
-							/></a>
-							<a href="https://www.instagram.com/codesquadpix/" target="_blank"
-								><img
-									src="assets/img/InstagramLogo.png"
-									height="54"
-									width="54"
-									alt="Instagram logo"
-							/></a>
-						</div>
-						<div class="col-xs-12 col-md-6">
-							<!-- Begin Mailchimp Signup Form -->
-							<link
-								href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
-								rel="stylesheet"
-								type="text/css"
-							/>
-							<div id="mc_embed_signup">
-								<form
-									action="https://codesquad.us2.list-manage.com/subscribe/post?u=364221539aba8d6ca0f5ae380&amp;id=3ce50926c4"
-									method="post"
-									id="mc-embedded-subscribe-form"
-									name="mc-embedded-subscribe-form"
-									class="validate"
-									target="_blank"
-									novalidate
-								>
-									<div id="mc_embed_signup_scroll">
-										<h2>Subscribe</h2>
-										<div class="indicates-required">
-											<span class="asterisk">*</span> indicates required
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-EMAIL"
-												>Email: <span class="asterisk">*</span>
-											</label>
-											<input
-												type="email"
-												value=""
-												name="EMAIL"
-												class="required email"
-												id="mce-EMAIL"
-											/>
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-FNAME"
-												>First name: <span class="asterisk">*</span>
-											</label>
-											<input
-												type="text"
-												value=""
-												name="FNAME"
-												class="required"
-												id="mce-FNAME"
-											/>
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-LNAME"
-												>Last name: <span class="asterisk">*</span>
-											</label>
-											<input
-												type="text"
-												value=""
-												name="LNAME"
-												class="required"
-												id="mce-LNAME"
-											/>
-										</div>
-										<div class="mc-field-group">
-											<label for="mce-MMERGE6"
-												>Please choose one: <span class="asterisk">*</span>
-											</label>
-											<select name="MMERGE6" class="required" id="mce-MMERGE6">
-												<option value=""></option>
-												<option value="I'm looking to hire developers">
-													I'm looking to hire developers
-												</option>
-												<option value="I’d like to discuss a partnership">
-													I'd like to discuss a partnership
-												</option>
-												<option value="I'm interested in volunteering">
-													I'm interested in volunteering
-												</option>
-												<option
-													value="I'm interested in applying to the program"
-												>
-													I'm interested in applying to the program
-												</option>
-												<option value="I'm just here to support CodeSquad">
-													I'm just here to support CodeSquad
-												</option>
-											</select>
-										</div>
-										<div hidden="true">
-											<input type="hidden" name="tags" value="1287435" />
-										</div>
-										<div id="mce-responses" class="clear">
-											<div
-												class="response"
-												id="mce-error-response"
-												style="display: none"
-											></div>
-											<div
-												class="response"
-												id="mce-success-response"
-												style="display: none"
-											></div>
-										</div>
-										<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-										<div
-											style="position: absolute; left: -5000px"
-											aria-hidden="true"
-										>
-											<input
-												type="text"
-												name="b_364221539aba8d6ca0f5ae380_3ce50926c4"
-												tabindex="-1"
-												value=""
-											/>
-										</div>
-										<div class="clear">
-											<input
-												type="submit"
-												value="Subscribe"
-												name="subscribe"
-												id="mc-embedded-subscribe"
-												class="button"
-											/>
-										</div>
-									</div>
-								</form>
-							</div>
-							<script
-								type="text/javascript"
-								src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-							></script>
-							<script type="text/javascript">
-								(function ($) {
-									window.fnames = new Array();
-									window.ftypes = new Array();
-									fnames[0] = "EMAIL";
-									ftypes[0] = "email";
-									fnames[1] = "FNAME";
-									ftypes[1] = "text";
-									fnames[2] = "LNAME";
-									ftypes[2] = "text";
-									fnames[3] = "MMERGE3";
-									ftypes[3] = "text";
-									fnames[4] = "MMERGE4";
-									ftypes[4] = "text";
-									fnames[6] = "MMERGE6";
-									ftypes[6] = "dropdown";
-									fnames[5] = "MMERGE5";
-									ftypes[5] = "text";
-								})(jQuery);
-								var $mcj = jQuery.noConflict(true);
-							</script>
-							<!--End mc_embed_signup-->
-						</div>
-					</div>
-					<!-- End row -->
+		<h1 class="center">Newsletter</h1>
+		<div class="row"> <!-- Begin first row -->
+			<div class="col-xs-12 col-md-4">
+				<div class="card-block">
+					<a href="newsletter2023yearEnd.html" target="_blank">
+						<img src="assets/img/newsletter2023yearEnd.jpg" alt="CodeSquad News header" width="250" />
+					</a>
+					<p class="card-text">
+						CodeSquad: Unlocking potential with your support
+					</p>
+					<p class="card-text">
+						<a href="newsletter2023yearEnd.html" target="_blank">Read newsletter</a>
+					</p>
 				</div>
-				<!-- End container -->
 			</div>
-			<!-- End of <div> with position "relative" -->
-			<div class="positionRel">
-				<p class="footer-copyright">
-					Copyright &copy; CodeSquad 2018-2024. All rights reserved.
-				</p>
+			<div class="col-xs-12 col-md-4">
+				<div class="card-block">
+					<a href="newsletterFY23Q4.pdf" target="_blank">
+						<img src="assets/img/newsletter-FY24Q4-header.png" alt="CodeSquad News header" width="250" />
+					</a>
+					<p class="card-text">
+						Spring 2023: Project Night.. and new React training
+					</p>
+					<p class="card-text">
+						<a href="newsletterFY23Q4.pdf" target="_blank">Read newsletter</a>
+					</p>
+				</div>
 			</div>
-		</footer>
-		<!-- End page footer -->
+			<div class="col-xs-12 col-md-4">
+				<div class="card-block">
+					<a href="newsletter2022Fall.pdf" target="_blank">
+						<img src="assets/img/2022-11-Header.png" alt="CodeSquad News header" width="250" />
+					</a>
+					<p class="card-text">Fall 2022: Early successes for recent grads</p>
+					<p class="card-text">
+						<a href="newsletter2022Fall.pdf" target="_blank">Read newsletter</a>
+					</p>
+				</div>
+			</div>
+		</div> <!-- End of first row -->
+		<div class="row"> <!-- Begin second row -->
+			<div class="col-xs-12 col-md-4">
+				<div class="card-block">
+					<a href="newsletter2021Fall.html">
+						<img src="assets/img/2021AppealHeader.png" alt="CodeSquad News header" width="250" />
+					</a>
+					<p class="card-text">
+						Fall 2021: graduate, donor and staff testimonials
+					</p>
+					<p class="card-text">
+						<a href="newsletter2021Fall.html">Read newsletter</a>
+					</p>
+				</div> <!-- End of card block -->
+			</div> <!-- End of card -->
+		</div> <!-- End of second row -->
 
-		<!-- jQuery link & Bootstrap JS link -->
-		<script
-			src="https://code.jquery.com/jquery-3.2.1.min.js"
-			integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="assets/js/lib/bootstrap.min.js"
-			type="text/javascript"
-		></script>
-	</body>
+		<h1 class="center">Who we are</h1>
+
+		<div class="row">
+			<div class="col-xs-12 col-md-4">
+				<div class="card card-noBorder">
+					<div class="card-title center">
+						Andrew Ott <br />
+						<span class="card-subhead">Executive Director</span>
+					</div>
+					<p class="card-text center">
+						<a href="http://www.andrewott.com">Andrew</a> is a business and
+						nonprofit leader with over 15 years experience in website
+						architecture, business development and social entrepreneurship. He
+						has built websites that showcase deep video content, drive new
+						revenue and solidify brands. In 2009, he was nominated for an Emmy
+						Award for a website built for PBS Frontline. Andrew has a master's
+						in public administration from Harvard Kennedy School.
+					</p>
+				</div>
+				<!-- End of card -->
+			</div>
+			<!-- End of column -->
+			<div class="col-xs-12 col-md-4">
+				<div class="card card-noBorder">
+					<div class="card-title center">
+						Ben Livermore <br />
+						<span class="card-subhead">Technical Director</span>
+					</div>
+					<p class="card-text center">
+						Ben has been a software engineer for 15 years, and has led teams
+						of web developers for large 5000-person corporations and for tiny
+						four-person startups. He has his master's in education from
+						Harvard Graduate School of Education and has taught classes on
+						test-driven development, pair programming, Agile management and
+						best practices in web development.
+					</p>
+				</div>
+				<!-- End of Ben Livermore card -->
+			</div>
+			<!-- End of column -->
+			<div class="col-xs-12 col-md-4">
+				<!-- Begin Leslie column -->
+				<div class="card card-noBorder">
+					<div class="card-title center">
+						Leslie Swanson <br />
+						<span class="card-subhead">Board Member</span>
+					</div>
+					<p class="card-text center">
+						Leslie Swanson is President and CEO of eXalt Solutions, a leading
+						cloud platform for B2B sales. She has founded three startups:
+						Vigilant Networks, a network monitoring company sold to Gen-Tek;
+						Expert Views, a CAE/CAD/CAM database company sold to RR Donnelley;
+						and eXalt Solutions. Leslie has a passion for metadata and
+						rules-based software and has won numerous patents
+						<a data-toggle="collapse" href="#leslieOver" aria-expanded="false" aria-controls="leslieOver">
+							...
+						</a>
+					</p>
+					<div class="collapse center pOverflow" id="leslieOver">
+						in network monitoring and data management. One of the earliest
+						adopters of outsourcing for business processes (BPO), Leslie is
+						excited about the future of robotic process automation and
+						artificial intelligence within the enterprise. After 30 years in
+						technology, Leslie is committed to growing diversity in the tech
+						sector. Her favorite charity is CodeSquad.
+					</div>
+				</div>
+				<!-- End of card -->
+			</div>
+			<!-- End of column -->
+		</div>
+		<!-- End of row -->
+		<div class="row">
+			<!-- Begin second row -->
+			<div class="col-xs-12 col-md-4">
+				<div class="card card-noBorder">
+					<div class="card-title center">
+						Arvind Krishnamurthy <br />
+						<span class="card-subhead">Board Member</span>
+					</div>
+					<p class="card-text center">
+						Arvind is an insurance executive with over 20 years of experience
+						in transactions and acquisitions. He is President of Allianz
+						Reinsurance Management Services and Head of Transactions for
+						Allianz Reinsurance America. Previously he was with Berkshire
+						Hathaway Reinsurance in a variety of roles including as Director
+						of a number of its insurance subsidiaries. Arvind has an MBA from
+						Columbia Business School and
+						<a data-toggle="collapse" href="#arvindOver" aria-expanded="false" aria-controls="arvindOver">
+							...
+						</a>
+					</p>
+					<div class="collapse center pOverflow" id="arvindOver">
+						an MPA from Harvard Kennedy School. He has passion for helping
+						disadvantaged individuals achieve their educational goals. To that
+						end, he has been a volunteer with Year-Up for several years and is
+						currently an advisor with Verto Fund.
+					</div>
+				</div>
+				<!-- End of card -->
+			</div>
+			<!-- End of column -->
+			<div class="col-xs-12 col-md-4">
+				<div class="card card-noBorder">
+					<div class="card-title center">
+						Luis Castro <br />
+						<span class="card-subhead">Board Member</span>
+					</div>
+					<p class="card-text center">
+						Luis has 15 years of experience in media and entertainment, with a
+						focus on cultivating diverse creative talent and executives. He
+						most recently served as Acting Commissioner of the NYC Mayor's
+						Office of Media &amp; Entertainment, where he oversaw a $30
+						million agency responsible for promoting film, television and
+						theatre production in New York. Prior to that he ran major talent
+						and artist-support
+						<a data-toggle="collapse" href="#luisOver" aria-expanded="false" aria-controls="luisOver">
+							...
+						</a>
+					</p>
+					<div class="collapse center pOverflow" id="luisOver">
+						initiatives for HBO in Los Angeles and Time Warner in New York.
+						Earlier in his career, working at the NYC Partnership, he built
+						public-private alliances between leading New York corporations,
+						the public school system, and community groups.
+					</div>
+				</div>
+				<!-- End of card -->
+			</div>
+			<!-- End of column -->
+			<div class="col-xs-12 col-md-4">
+				<!-- Begin JAS column -->
+				<div class="card card-noBorder">
+					<div class="card-title center">
+						Will Wen <br />
+						<span class="card-subhead">Technical Advisor</span>
+					</div>
+					<p class="card-text center">
+						Will is a software developer with strengths in full-stack
+						development and data engineering. His life's goal is to empower
+						those around him through software. In 2017, Will received his
+						bachelor's in computer science from Worcester Polytechnic
+						Institute. In that same year Will began volunteering with
+						CodeSquad, and has served in critical roles as classroom
+						instructor, mentor and technical advisor.
+					</p>
+				</div>
+				<!-- End of JAS card -->
+			</div>
+			<!-- End of JAS column -->
+		</div>
+		<!-- End second row -->
+	</div>
+	<!-- End of container -->
+
+	<!-- Begin page footer -->
+	<footer>
+		<div class="top-red-line"></div>
+		<div class="positionRel footerFont footerBak">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12 col-md-4 col-md-offset-2">
+						<div class="footerLogo"></div>
+						<p>
+							CodeSquad is a nonprofit organization that trains talented
+							adults from low-income families to become full-stack developers
+							and launch a new career.
+						</p>
+						<br />
+						<p class="footerHead">Quick Links</p>
+						<ul class="momentumUL">
+							<li><a href="index.html">What we do</a></li>
+							<li><a href="businesses.html">For businesses</a></li>
+							<li><a href="students.html">For students</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">
+									About Us<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu" id="cohortDropdown">
+									<li><a href="about-us.html">The CodeSquad Story</a></li>
+									<li><a href="cohort.html">Spring 2018 Cohort</a></li>
+									<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
+									<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
+									<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
+									<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
+									<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
+									<li><a href="careers.html">Job Openings</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+									aria-expanded="false">
+									Get involved<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li><a href="students.html">Become a developer</a></li>
+									<li>
+										<a href="businesses.html">Host a CodeSquad intern</a>
+									</li>
+									<li><a href="volunteer.html">Volunteer</a></li>
+								</ul>
+							</li>
+							<li><a href="donate.html">Donate</a></li>
+						</ul>
+						<br />
+						<p class="footerHead">Join us on social media</p>
+						<a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
+							<img src="assets/img/Facebook-logo3.png" height="54" width="54" alt="Facebook logo" />
+						</a>
+						<a href="https://www.linkedin.com/company/codesquad.org" target="_blank"><img
+								src="assets/img/LinkedInLogo.png" height="54" width="54" alt="LinkedIn logo" /></a>
+						<a href="https://www.instagram.com/codesquadpix/" target="_blank"><img src="assets/img/InstagramLogo.png"
+								height="54" width="54" alt="Instagram logo" /></a>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<!-- Begin Mailchimp Signup Form -->
+						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
+						<div id="mc_embed_signup">
+							<form
+								action="https://codesquad.us2.list-manage.com/subscribe/post?u=364221539aba8d6ca0f5ae380&amp;id=3ce50926c4"
+								method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+								target="_blank" novalidate>
+								<div id="mc_embed_signup_scroll">
+									<h2>Subscribe</h2>
+									<div class="indicates-required">
+										<span class="asterisk">*</span> indicates required
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-EMAIL">Email: <span class="asterisk">*</span>
+										</label>
+										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-FNAME">First name: <span class="asterisk">*</span>
+										</label>
+										<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" />
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-LNAME">Last name: <span class="asterisk">*</span>
+										</label>
+										<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" />
+									</div>
+									<div class="mc-field-group">
+										<label for="mce-MMERGE6">Please choose one: <span class="asterisk">*</span>
+										</label>
+										<select name="MMERGE6" class="required" id="mce-MMERGE6">
+											<option value=""></option>
+											<option value="I'm looking to hire developers">
+												I'm looking to hire developers
+											</option>
+											<option value="I’d like to discuss a partnership">
+												I'd like to discuss a partnership
+											</option>
+											<option value="I'm interested in volunteering">
+												I'm interested in volunteering
+											</option>
+											<option value="I'm interested in applying to the program">
+												I'm interested in applying to the program
+											</option>
+											<option value="I'm just here to support CodeSquad">
+												I'm just here to support CodeSquad
+											</option>
+										</select>
+									</div>
+									<div hidden="true">
+										<input type="hidden" name="tags" value="1287435" />
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display: none"></div>
+										<div class="response" id="mce-success-response" style="display: none"></div>
+									</div>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="position: absolute; left: -5000px" aria-hidden="true">
+										<input type="text" name="b_364221539aba8d6ca0f5ae380_3ce50926c4" tabindex="-1" value="" />
+									</div>
+									<div class="clear">
+										<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+									</div>
+								</div>
+							</form>
+						</div>
+						<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+						<script type="text/javascript">
+							(function ($) {
+								window.fnames = new Array();
+								window.ftypes = new Array();
+								fnames[0] = "EMAIL";
+								ftypes[0] = "email";
+								fnames[1] = "FNAME";
+								ftypes[1] = "text";
+								fnames[2] = "LNAME";
+								ftypes[2] = "text";
+								fnames[3] = "MMERGE3";
+								ftypes[3] = "text";
+								fnames[4] = "MMERGE4";
+								ftypes[4] = "text";
+								fnames[6] = "MMERGE6";
+								ftypes[6] = "dropdown";
+								fnames[5] = "MMERGE5";
+								ftypes[5] = "text";
+							})(jQuery);
+							var $mcj = jQuery.noConflict(true);
+						</script>
+						<!--End mc_embed_signup-->
+					</div>
+				</div>
+				<!-- End row -->
+			</div>
+			<!-- End container -->
+		</div>
+		<!-- End of <div> with position "relative" -->
+		<div class="positionRel">
+			<p class="footer-copyright">
+				Copyright &copy; CodeSquad 2018-2024. All rights reserved.
+			</p>
+		</div>
+	</footer>
+	<!-- End page footer -->
+
+	<!-- jQuery link & Bootstrap JS link -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="assets/js/lib/bootstrap.min.js" type="text/javascript"></script>
+</body>
+
 </html>
