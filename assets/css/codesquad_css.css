@@ -1636,6 +1636,7 @@ footer {
 
 .footer-copyright {
 	text-align: center;
+	font-size: 1.25rem;
 }
 
 @media screen and (min-width: 1px) and (max-width: 788px) {
