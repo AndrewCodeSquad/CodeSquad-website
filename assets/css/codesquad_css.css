@@ -475,6 +475,13 @@ img {
 	margin: 0;
 }
 
+/* busineses page styling */
+
+.imgSize{
+	width: 70%;
+	height: auto;
+	
+}
 /* input[type=text] {
 	color: rgb(160,160,158);
 	width: 100%;
