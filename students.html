@@ -1,190 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-9379866-2"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-9379866-2");
+    </script>
+    <title>Become a developer with CodeSquad</title>
+    <!-- Bootstrap core CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/lib/bootstrap.min.css"
+    />
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/codesquad_css.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Become a developer with CodeSquad" />
+    <meta name="author" content="Andrew Ott - CodeSquad" />
+    <meta
+      property="og:image"
+      content="//codesquad.org/assets/img/img_8257_crop.jpg"
+    />
+    <meta
+      property="og:description"
+      content="At CodeSquad, we believe that anyone with a curious mind can become a software developer. Our free, intensive, learn-to-code bootcamp can teach you both front-end web design as well as database and server-side development."
+    />
+    <meta property="og:url" content="//codesquad.org/students.html" />
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "638029117122317");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=638029117122317&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+  </head>
 
-<head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-9379866-2"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag("js", new Date());
-		gtag("config", "UA-9379866-2");
-	</script>
-	<title>Become a developer with CodeSquad</title>
-	<!-- Bootstrap core CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/lib/bootstrap.min.css" />
-	<!-- Custom CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/codesquad_css.css" />
-	<!-- Google Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta property="og:title" content="Become a developer with CodeSquad" />
-	<meta name="author" content="Andrew Ott - CodeSquad" />
-	<meta property="og:image" content="//codesquad.org/assets/img/img_8257_crop.jpg" />
-	<meta property="og:description"
-		content="At CodeSquad, we believe that anyone with a curious mind can become a software developer. Our free, intensive, learn-to-code bootcamp can teach you both front-end web design as well as database and server-side development." />
-	<meta property="og:url" content="//codesquad.org/students.html" />
-	<!-- Facebook Pixel Code -->
-	<script>
-		!(function (f, b, e, v, n, t, s) {
-			if (f.fbq) return;
-			n = f.fbq = function () {
-				n.callMethod
-					? n.callMethod.apply(n, arguments)
-					: n.queue.push(arguments);
-			};
-			if (!f._fbq) f._fbq = n;
-			n.push = n;
-			n.loaded = !0;
-			n.version = "2.0";
-			n.queue = [];
-			t = b.createElement(e);
-			t.async = !0;
-			t.src = v;
-			s = b.getElementsByTagName(e)[0];
-			s.parentNode.insertBefore(t, s);
-		})(
-			window,
-			document,
-			"script",
-			"https://connect.facebook.net/en_US/fbevents.js"
-		);
-		fbq("init", "638029117122317");
-		fbq("track", "PageView");
-	</script>
-	<noscript><img height="1" width="1" style="display: none"
-			src="https://www.facebook.com/tr?id=638029117122317&ev=PageView&noscript=1" /></noscript>
-	<!-- End Facebook Pixel Code -->
-</head>
+  <body>
+    <div class="top-red-line"></div>
 
-<body>
-	<div class="top-red-line"></div>
+    <!-- Begin Navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <!-- CodeSquad logo -->
+            <img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
+          </a>
+        </div>
 
-	<!-- Begin Navbar -->
-	<nav class="navbar navbar-default">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="index.html">
-					<!-- CodeSquad logo -->
-					<img alt="CodeSquad" src="assets/img/CodeSquad-website-logo.png" />
-				</a>
-			</div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">What we do</a></li>
+            <li><a href="businesses.html">For businesses</a></li>
+            <li class="active">
+              <a href="students.html">
+                For students
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                About Us<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" id="cohortDropdown">
+                <li><a href="about-us.html">The CodeSquad Story</a></li>
+                <li><a href="cohort.html">Spring 2018 Cohort</a></li>
+                <li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
+                <li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
+                <li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
+                <li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
+                <li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
+                <li><a href="cohort2024.html">Spring 2024 Cohort</a></li>
+                <li><a href="careers.html">Job Openings</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a
+                href="#"
+                class="dropdown-toggle"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Get involved<span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="students.html">Become a developer</a></li>
+                <li><a href="businesses.html">Host a CodeSquad intern</a></li>
+                <li><a href="volunteer.html">Volunteer</a></li>
+              </ul>
+            </li>
+            <li><a href="donate.html">Donate</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+    <!-- End Navbar -->
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">What we do</a></li>
-					<li><a href="businesses.html">For businesses</a></li>
-					<li class="active">
-						<a href="students.html">For students<span class="sr-only">(current)</span></a>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							aria-expanded="false">
-							About Us<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu" id="cohortDropdown">
-							<li><a href="about-us.html">The CodeSquad Story</a></li>
-							<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-							<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-							<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-							<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-							<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-							<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
-							<li><a href="cohort2024.html">Spring 2024 Cohort</a></li>
-							<li><a href="careers.html">Job Openings</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-							aria-expanded="false">
-							Get involved<span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="students.html">Become a developer</a></li>
-							<li><a href="businesses.html">Host a CodeSquad intern</a></li>
-							<li><a href="volunteer.html">Volunteer</a></li>
-						</ul>
-					</li>
-					<li><a href="donate.html">Donate</a></li>
-				</ul>
-			</div>
-			<!-- /.navbar-collapse -->
-		</div>
-		<!-- /.container-fluid -->
-	</nav>
-	<!-- End Navbar -->
+    <!-- Main banner section -->
+    <div class="positionRel container-banner">
+      <img
+        src="assets/img/img_8257_crop.jpg"
+        width="1920"
+        class="img-responsive center-block img-banner"
+      />
+      <div class="headlineTxt headlineTxtStudents mobileHide">
+        Become a developer
+      </div>
+    </div>
+    <div class="red-bar">
+      <div class="mobileShow">Become a developer</div>
+      <div class="mobileHide">
+        A flexible and powerful way to improve your career
+      </div>
+    </div>
+    <div>
+      <img
+        src="assets/img/arrow.png"
+        width="65"
+        height="40"
+        class="img-responsive center-block"
+      />
+    </div>
 
-	<!-- Main banner section -->
-	<div class="positionRel container-banner">
-		<img src="assets/img/img_8257_crop.jpg" width="1920" class="img-responsive center-block img-banner" />
-		<div class="headlineTxt headlineTxtStudents mobileHide">
-			Become a developer
-		</div>
-	</div>
-	<div class="red-bar">
-		<div class="mobileShow">Become a developer</div>
-		<div class="mobileHide">
-			A flexible and powerful way to improve your career
-		</div>
-	</div>
-	<div>
-		<img src="assets/img/arrow.png" width="65" height="40" class="img-responsive center-block" />
-	</div>
-
-	<!-- Begin Page Content -->
-	<div class="page-apply">
-		<div class="container-section">
-			<div class="container-head">
-				<h2>CodeSquad Bootcamp Summary</h2>
-				<span>Cost: Free</span>
-				<!-- <a href="./2023admissions/2023-IntForm.html" target="_blank">
+    <!-- Begin Page Content -->
+    <div class="page-apply">
+      <div class="container-section">
+        <div class="container-head">
+          <h2>CodeSquad Bootcamp Summary</h2>
+          <span>Cost: Free</span>
+          <!-- <a href="./2023admissions/2023-IntForm.html" target="_blank">
           <button class="btnRed process-btn">
             Complete Interest Form
           </button>
         </a> -->
-			</div>
-			<div class="container-three-sections">
-				<div class="container-three-section">
-					<h3>2024 Schedule</h3>
-					<ul>
-						<!-- <li>Part Time  |  Remote/In-Person Hybrid</li> -->
-						<li>Part-Time | Remote</li>
-						<li>3 weeks self-paced: Nov 20 - Dec 10</li>
-						<li>24 weeks live classes: Jan 8 - Jun 29</li>
-						<li>
-							Monday-Wednesday 6:30<span class="span-time">PM</span>
-							-9:00<span class="span-time">PM</span> EST
-						</li>
-						<li>
-							Saturday 9:00<span class="span-time">AM</span>-2:00<span class="span-time">PM</span> EST
-						</li>
-					</ul>
-				</div>
-				<div class="container-three-section">
-					<h3>Skills taught</h3>
-					<p>
-						Learn JavaScript, React, HTML &amp; CSS to create dynamic
-						websites. Integrate back-end frameworks including Node & Express
-						along with database technology (MongoDB, Mongoose) to build
-						complete web applications. Job-ready skills integrated throughout.
-					</p>
-				</div>
-				<div class="container-three-section">
-					<h3>Info Sessions</h3>
-					<!-- Zero margin fixes tablet display -->
-					<p style="margin: 0 0 5px 0; font-style: italic;">
-					<!-- <ul style="list-style-type:disc">
+        </div>
+        <div class="container-three-sections">
+          <div class="container-three-section">
+            <h3>2024 Schedule</h3>
+            <ul>
+              <!-- <li>Part Time  |  Remote/In-Person Hybrid</li> -->
+              <li>Part-Time | Remote</li>
+              <li>3 weeks self-paced: Nov 25 - Dec 15</li>
+              <li>24 weeks live classes: Jan 6 - Jun 28</li>
+              <li>
+                Monday-Wednesday 6:30
+                <span class="span-time">PM</span> - 9:00
+                <span class="span-time">PM</span> EST
+              </li>
+              <li>
+                Saturday 9:00
+                <span class="span-time">AM</span> - 2:00
+                <span class="span-time">PM</span> EST
+              </li>
+            </ul>
+          </div>
+          <div class="container-three-section">
+            <h3>Skills taught</h3>
+            <p>
+              Learn JavaScript, React, HTML &amp; CSS to create dynamic
+              websites. Integrate front-end framework React and back-end
+              frameworks including Node & Express along with database technology
+              (MongoDB, Mongoose) to build full-stack web applications.
+              Job-ready skills integrated throughout.
+            </p>
+          </div>
+          <div class="container-three-section">
+            <h3>Info Sessions</h3>
+            <!-- Zero margin fixes tablet display -->
+            <p style="margin: 0 0 5px 0; font-style: italic">
+              <!-- <ul style="list-style-type:disc">
 						<li>Monday, Aug 14, 2023 - 6:30pm-8:30pm EST
 							<div>
 								<a href="#">
@@ -213,79 +269,86 @@
 							</div>
 						</li>
 					</ul> -->
-					The deadline to apply to our 2024&nbsp;Bootcamp has passed.
-							Applications for 2025 will open in August 2024.
-					</p>
-					<!-- <p style="margin: 0">Register below to be notified!</p>
+              The deadline to apply to our 2024&nbsp;Bootcamp has passed.
+              Applications for 2025 will open in August 2024.
+            </p>
+            <!-- <p style="margin: 0">Register below to be notified!</p>
 						<a href="./2024admissions/2024-IntForm.html" target="_blank">
 							<button class="btnRed process-btn" style="margin-top: 15px">
 								Complete Interest Form
 							</button>
 						</a> -->
-				</div>
-			</div>
-		</div>
-		<!-- <br> -->
-		<div class="container-section background-light-grey">
-			<div class="container-head">
-				<h2>Apply to CodeSquad</h2>
-			</div>
-			<div class="container-three-sections">
-				<div class="container-three-section display-list-bullet">
-					<h3>Requirements to apply</h3>
-					<ul>
-						<li>High school diploma or equivalent</li>
-						<li>U.S. citizenship or immigrant authorization to work in the U.S.
-						</li>
-						<li>Commitment to complete all coursework, attend remote classes,
-							and uphold community norms</li>
-						<li>In-person career & networking events occur in or near Boston, MA; attendance is optional but encouraged</li>
-						<!-- <li>able to complete pre-course by Dec. 19, 2022 and attend remote classes from January - June 2023</li>
+          </div>
+        </div>
+      </div>
+      <div class="container-section background-light-grey">
+        <div class="container-head">
+          <h2>Apply to CodeSquad</h2>
+        </div>
+        <div class="container-three-sections">
+          <div class="container-three-section display-list-bullet">
+            <h3>Requirements to apply</h3>
+            <ul>
+              <li>High school diploma or equivalent</li>
+              <li>
+                U.S. Citizenship or Employment Authorization to work in the U.S.
+              </li>
+              <li>
+                Commitment to complete all coursework, attend remote classes,
+                and uphold community norms
+              </li>
+              <li>
+                In-person career & networking events occur in or near Boston,
+                MA; attendance is optional but encouraged
+              </li>
+              <!-- <li>able to complete pre-course by Dec. 19, 2022 and attend remote classes from January - June 2023</li>
             <li>commitment to uphold community norms</li> -->
-					</ul>
-				</div>
-				<div class="container-three-section">
-					<h3>Who should apply?</h3>
-					<p>
-						At CodeSquad, we believe that anyone with a curious mind can
-						become a software developer. Do you like to solve puzzles? Would
-						you like to build websites and apps? Our free, intensive,
-						learn-to-code bootcamp can teach you both front-end web design
-						skills and server-side development. Plus, we will help you become
-						job ready for a new role in software.
-					</p>
-				</div>
-				<div class="container-three-section display-list-bullet">
-					<h3>Pre-requisite skills</h3>
-					<ul>
-						<li>Basic computer skills</li>
-						<li>Time management & organization skills</li>
-						<li>Effective communication</li>
-						<li>Collaboration and teamwork</li>
-						<li>Problem-solving skills & creativity</li>
-						<li>Self-learning ability</li>
-					</ul>
-				</div>
-			</div>
-			<div class="container-two-sections">
-				<div class="container-section-process">
-					<h3>Application process</h3>
-				<div class="container-process-row">
-						<!-- The 'process-step' class creates a number for each step -->
-						<div class="process-step">&#9312;</div>
-						<div class="process-content">
-							Complete our
-							<span class="text-color-red">Interest Form</span>.
-						</div>
-					</div>
+            </ul>
+          </div>
+          <div class="container-three-section">
+            <h3>Who should apply?</h3>
+            <p>
+              At CodeSquad, we believe that anyone with a curious mind can
+              become a software developer. Do you like to solve puzzles? Would
+              you like to build websites and apps? Our free, intensive,
+              learn-to-code bootcamp can teach you both front-end web design
+              skills and server-side development. Plus, we will help you become
+              job ready for a new role in software.
+            </p>
+          </div>
+          <div class="container-three-section display-list-bullet">
+            <h3>Pre-requisite skills</h3>
+            <ul>
+              <li>Basic computer skills</li>
+              <li>Time management & organization skills</li>
+              <li>Effective communication</li>
+              <li>Collaboration and teamwork</li>
+              <li>Problem-solving skills & creativity</li>
+              <li>Self-learning ability</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-two-sections">
+          <div class="container-section-process">
+            <h3>Application process</h3>
+            <div class="container-process-row">
+              <!-- The 'process-step' class creates a number for each step -->
+              <div class="process-step">&#9312;</div>
+              <div class="process-content">
+                Complete our
+                <span class="text-color-red">Interest Form</span>.
+              </div>
+            </div>
 
-					<div class="container-process-row">
-						<div class="process-step"></div>
-						<div class="process-step-next">&#8618;</div>
-						<p style="font-weight: bold; font-style: italic;">The deadline to apply to our 2024&nbsp;Bootcamp has passed.
-							By September 30, 2023 we will post a signup form to receive information about our 2025&nbsp;Bootcamp.</p>
-	
-						<!-- <div class="process-content">
+            <div class="container-process-row">
+              <div class="process-step"></div>
+              <div class="process-step-next">&#8618;</div>
+              <p style="font-weight: bold; font-style: italic">
+                The deadline to apply to our 2024 Bootcamp has passed.
+                Applications for 2025 will open in August 2024.
+              </p>
+
+              <!-- <div class="process-content">
 							You will receive an email with a link to complete the Application. If you do not receive a confirmation
 							email, please reach out to
 							info@codesquad.org.<br />
@@ -295,744 +358,927 @@
 								</button>
 							</a>
 						</div> -->
-					</div>
+            </div>
 
-					<div class="container-process-row border-top-grey">
-						<div class="process-step">&#9313;</div>
-						<div class="process-content">
-							Complete the <span class="text-color-red">Application</span> between July 26 and September 5, 2023.
-						</div>
-					</div>
+            <div class="container-process-row border-top-grey">
+              <div class="process-step">&#9313;</div>
+              <div class="process-content">
+                Complete the
+                <span class="text-color-red">Application</span>
+                between July 30 and September 3, 2024.
+              </div>
+            </div>
 
-					<div class="container-process-row">
-						<div class="process-step"></div>
-						<div class="process-step-next">&#8618;</div>
-						<div class="process-content">
-							<span style="font-weight: bold; font-style: italic;">The deadline to apply to our 2024&nbsp;Bootcamp has passed. </span>
-							We will review applications that have already been submitted on a rolling basis and send out invites to our HTML Mini Course.
-						</div>
-					</div>
+            <div class="container-process-row">
+              <div class="process-step"></div>
+              <div class="process-step-next">&#8618;</div>
+              <div class="process-content">
+                <span style="font-weight: bold; font-style: italic">
+                  The deadline to apply to our 2024 Bootcamp has passed.
+                </span>
+                We will review applications that have already been submitted on
+                a rolling basis and send out invites to our HTML Mini Course.
+              </div>
+            </div>
 
-					<div class="container-process-row border-top-grey">
-						<div class="process-step">&#9314;</div>
-						<div class="process-content">
-							Complete the <span class="text-color-red">Mini Course</span> between September 14 and October 2, 2023.
-							These brief lessons on Google Classroom will guide you through
-							coding basic HTML pages to complete a coding challenge.
-						</div>
-					</div>
+            <div class="container-process-row border-top-grey">
+              <div class="process-step">&#9314;</div>
+              <div class="process-content">
+                Complete the
+                <span class="text-color-red">Mini Course</span>
+                between September 16 and 27, 2024. These brief lessons on Google
+                Classroom will guide you through coding basic HTML pages to
+                complete a coding challenge.
+              </div>
+            </div>
 
-					<div class="container-process-row">
-						<div class="process-step"></div>
-						<div class="process-step-next">&#8618;</div>
-						<div class="process-content">
-							We'll review mini-course submissions and send invites to virtual
-							interviews.
-						</div>
-					</div>
+            <div class="container-process-row">
+              <div class="process-step"></div>
+              <div class="process-step-next">&#8618;</div>
+              <div class="process-content">
+                We'll review mini-course submissions and send invites to virtual
+                interviews.
+              </div>
+            </div>
 
-					<div class="container-process-row border-top-grey">
-						<div class="process-step">&#9315;</div>
-						<div class="process-content">
-							Complete a
-							<span class="text-color-red">half hour interview</span> with a
-							staff member.
-						</div>
-					</div>
+            <div class="container-process-row border-top-grey">
+              <div class="process-step">&#9315;</div>
+              <div class="process-content">
+                Complete a
+                <span class="text-color-red">half hour video interview</span>
+                with a staff member.
+              </div>
+            </div>
 
-					<div class="container-process-row">
-						<div class="process-step"></div>
-						<div class="process-step-next">&#8618;</div>
-						<div class="process-content">
-							Find out if you've been accepted to the program when we send out
-							final decision emails.
-						</div>
-					</div>
+            <div class="container-process-row">
+              <div class="process-step"></div>
+              <div class="process-step-next">&#8618;</div>
+              <div class="process-content">
+                Find out if you've been accepted to the program when we send out
+                final decision emails.
+              </div>
+            </div>
 
-					<div class="container-process-row border-top-grey">
-						<div class="process-step">&#9316;</div>
-						<div class="process-content">
-							<span class="text-color-red">Accept your spot</span> in the
-							bootcamp by November 15, 2023 and attend Orientation on November 20.
-						</div>
-					</div>
-				</div>
-				<div class="img-half-screen-vertical">
-					<img src="./assets/img/stock-photo-three-friends.jpg"
-						alt="three friends sharing laptop on outdoor stairs Photo by Keira Burton from Pexels" />
-				</div>
-			</div>
+            <div class="container-process-row border-top-grey">
+              <div class="process-step">&#9316;</div>
+              <div class="process-content">
+                <span class="text-color-red">Accept your spot</span>
+                in the bootcamp by November 13, 2024 and attend Orientation on
+                November 25.
+              </div>
+            </div>
+          </div>
+          <div class="img-half-screen-vertical">
+            <img
+              src="./assets/img/stock-photo-three-friends.jpg"
+              alt="three friends sharing laptop on outdoor stairs Photo by Keira Burton from Pexels"
+            />
+          </div>
+        </div>
 
-			<br /><br />
-		</div>
-		<div class="container-section">
-			<div class="container-head">
-				<h2>CodeSquad's results</h2>
-			</div>
-			<div class="container-two-sections">
-				<div class="container-section-50">
-					<h3>Our successes</h3>
-					<p>
-						With the skills gained in our program, CodeSquad graduates have
-						found jobs throughout the software development field, with titles
-						including Software Engineer, Application Developer, and even Chief
-						Information Officer. During the program, you will hear from
-						CodeSquad graduates, volunteers, and experts in the tech industry
-						about their experiences, and they will share their tips and tricks
-						to getting your first job in web development.
-					</p>
-				</div>
+        <br /><br />
+      </div>
+      <div class="container-section">
+        <div class="container-head">
+          <h2>CodeSquad's results</h2>
+        </div>
+        <div class="container-two-sections">
+          <div class="container-section-50">
+            <h3>Our successes</h3>
+            <p>
+              With the skills gained in our program, CodeSquad graduates have
+              found jobs throughout the software development field, with titles
+              including Software Engineer, Application Developer, and even Chief
+              Information Officer. During the program, you will hear from
+              CodeSquad graduates, volunteers, and experts in the tech industry
+              about their experiences, and they will share their tips and tricks
+              to getting your first job in web development.
+            </p>
+          </div>
 
-				<div class="container-section-50">
-					<!-- Make a center class for this h3 that go back to left justified at mobil screen size -->
-					<h3>What jobs could I get?</h3>
-					<ul class="ul-2-column">
-						<li>Software Engineer</li>
-						<li>Full-Stack Developer</li>
-						<li>Application Developer</li>
-						<li>Front-End Developer</li>
-						<li>Mobile Developer</li>
-						<li>Quality Assurance Tester</li>
-						<li>Freelance Web Developer</li>
-					</ul>
-				</div>
-			</div>
-			<div class="container-one-section">
-				<h3>Our grads have found software jobs at companies including:</h3>
-				<div class="container-apply-logos">
-					<img src="./assets/img/grad-companies/NBCUniversal.png" class="" alt="NBC Universal logo" />
-					<img src="./assets/img/grad-companies/Chewy.png" class="" alt="NBC Universal logo" />
-					<img src="./assets/img/grad-companies/UnitedHealth.png" class="" alt="UnitedHealth logo" />
-					<img src="./assets/img/grad-companies/Liberty-Mutual-Insurance-Logo-PNG-Transparent.png" class=""
-						alt="Liberty Mutual logo" />
-					<img src="./assets/img/grad-companies/Capital_One_logo.png" class="" alt="Capital One logo" />
-					<img src="./assets/img/grad-companies/617Media.png" class="" alt="617 Media Group logo" />
-					<img src="./assets/img/grad-companies/embark.png" class="" alt="Embark logo" />
+          <div class="container-section-50">
+            <!-- Make a center class for this h3 that go back to left justified at mobil screen size -->
+            <h3>What jobs could I get?</h3>
+            <ul class="ul-2-column">
+              <li>Software Engineer</li>
+              <li>Full-Stack Developer</li>
+              <li>Front-End Developer</li>
+              <li>Back-End Developer</li>
+              <li>Application Developer</li>
+              <li>Mobile Developer</li>
+              <li>Quality Assurance Tester</li>
+              <li>Freelance Web Developer</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container-one-section">
+          <h3>Our grads have found software jobs at companies including:</h3>
+          <div class="container-apply-logos">
+            <img
+              src="./assets/img/grad-companies/NBCUniversal.png"
+              class=""
+              alt="NBC Universal logo"
+            />
+            <img
+              src="./assets/img/grad-companies/Chewy.png"
+              class=""
+              alt="NBC Universal logo"
+            />
+            <img
+              src="./assets/img/grad-companies/UnitedHealth.png"
+              class=""
+              alt="UnitedHealth logo"
+            />
+            <img
+              src="./assets/img/grad-companies/Liberty-Mutual-Insurance-Logo-PNG-Transparent.png"
+              class=""
+              alt="Liberty Mutual logo"
+            />
+            <img
+              src="./assets/img/grad-companies/Capital_One_logo.png"
+              class=""
+              alt="Capital One logo"
+            />
+            <img
+              src="./assets/img/grad-companies/617Media.png"
+              class=""
+              alt="617 Media Group logo"
+            />
+            <img
+              src="./assets/img/grad-companies/embark.png"
+              class=""
+              alt="Embark logo"
+            />
+            <img
+              src="./assets/img/grad-companies/athenahealth.png"
+              class=""
+              alt="Athena Health logo"
+            />
+            <img
+              src="./assets/img/grad-companies/Rapid7.png"
+              class=""
+              alt="Rapid7 logo"
+            />
+          </div>
+        </div>
+      </div>
 
-					<img src="./assets/img/grad-companies/athenahealth.png" class="" alt="Athena Health logo" />
-					<img src="./assets/img/grad-companies/Rapid7.png" class="" alt="Rapid7 logo" />
-				</div>
-			</div>
-		</div>
+      <div class="container-section background-light-grey">
+        <div class="container-head">
+          <h2>CodeSquad's Curriculum</h2>
+        </div>
+        <div class="container-one-section">
+          <h3 class="center">Program Highlights</h3>
+          <ul class="ul-3-column">
+            <li>3-week, self-paced pre-course</li>
+            <li>24-week program (virtual via Zoom)</li>
+            <li>20 students per cohort</li>
+            <li>
+              Weekly check-ins with assigned mentor and personalized feedback
+            </li>
+            <li>4:1 student to teacher ratio</li>
+            <li>Office hours available for 1:1 help</li>
+            <li>Hands-on learning every lesson</li>
+            <li>Classwork, homework, & quizzes</li>
+            <li>Course project & Personal project</li>
+            <li>Regular panels with industry professionals</li>
+            <li>Monthly, performance-based stipend</li>
+            <li>Job readiness & career coaching</li>
+            <li>Project Night showcase with industry professionals</li>
+          </ul>
+        </div>
+        <div class="container-one-section">
+          <h3 class="center">2025 Program Timeline</h3>
+          <br />
+          <div class="timeline">
+            <div class="container-timeline-section timeline-left">
+              <div class="timeline-content">
+                <h4 class="text-color-red">Mini Course</h4>
+                <span class="span-timeline-date">September 2024: 3 weeks</span>
+                <p>
+                  Learn coding basics, create a webpage to submit as part of
+                  your application, and see what it's like to learn from our
+                  Teaching Fellows through self-paced, guided video lessons on
+                  Google Classroom. Open office hours available for additional
+                  instruction.
+                </p>
+              </div>
+            </div>
+            <div class="container-timeline-section timeline-right">
+              <div class="timeline-content">
+                <h4 class="text-color-red">Pre-Course</h4>
+                <span class="span-timeline-date">
+                  November - December 2024: 3 weeks
+                </span>
+                <p>
+                  Once accepted to the program, you'll complete a few more units
+                  of additional pre-work so we can jump right into coding when
+                  live lessons start.
+                </p>
+              </div>
+            </div>
+            <div class="container-timeline-section timeline-left">
+              <div class="timeline-content">
+                <h4 class="text-color-red">Bootcamp</h4>
+                <span class="span-timeline-date">
+                  January 2025 - June 2025: 24 weeks
+                </span>
+                <!-- <p>Learn how to build a full-stack web application from our talented Teaching Fellows in hands-on lessons Monday-Wednesday from 6:30<span class="span-time">PM</span>-9:00<span class="span-time">PM</span> via Zoom and Saturdays from 9:00<span class="span-time">AM</span>-2:00<span class="span-time">PM</span> in-person (depending on health guidelines related to the pandemic). Get support via weekly check-ins with your mentor, open office hours, and 1:1 tutoring sessions as needed.</p> -->
+                <p>
+                  Learn how to build a full-stack web application from our
+                  talented Teaching Fellows in hands-on lessons Monday through
+                  Wednesday from 6:30 <span class="span-time">PM</span> - 9:00
+                  <span class="span-time"> PM</span> EST and Saturdays from 9:00
+                  <span class="span-time"> AM</span> - 2:00
+                  <span class="span-time">PM</span> EST via Zoom. Get support
+                  via weekly check-ins with your mentor, open office hours, and
+                  1:1 tutoring sessions as needed.
+                </p>
+              </div>
+            </div>
+            <div class="container-timeline-section timeline-right">
+              <div class="timeline-content">
+                <h4 class="text-color-red">Job Readiness</h4>
+                <span class="span-timeline-date">
+                  January 2025 - June 2025: 24 weeks
+                </span>
+                <p>
+                  Throughout the bootcamp, learn about the career
+                  specializations within web development you'll be prepared to
+                  pursue post-graduation. Learn from industry professionals, get
+                  guidance on soft-skills, prepare for interviews, build your
+                  resume, and more.
+                </p>
+              </div>
+            </div>
+            <div class="container-timeline-section timeline-left">
+              <div class="timeline-content">
+                <h4 class="text-color-red">Project Night</h4>
+                <span class="span-timeline-date">June 2025</span>
+                <p>
+                  Showcase the full-stack personal project you'll build
+                  throughout the bootcamp to industry professionals interested
+                  in hiring you as a web developer.
+                </p>
+              </div>
+            </div>
+            <div class="container-timeline-section timeline-right">
+              <div class="timeline-content">
+                <h4 class="text-color-red">Career Support</h4>
+                <span class="span-timeline-date">
+                  June 2025 - December 2025 & beyond
+                </span>
+                <p>
+                  Work with support staff after graduation as you pursue a
+                  career in web development. Get support around interview prep,
+                  continue learning and coding in supportive groups, and connect
+                  with the vast network of web developers and hiring managers
+                  connected to CodeSquad.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="container-one-section">
+          <h3 class="center">Languages, tools, & frameworks taught</h3>
+          <div class="container-tools-logos">
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-html.png"
+                  alt="HTML 5 logo"
+                  class="tools-logo"
+                />
+                <h6>HTML</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">HTML</h6>
+                <p>
+                  HyperText Markup Language is the language that the web is
+                  written in. Web browsers translate HTML into the content
+                  displayed on your screen. It's a cornerstone technology of the
+                  web.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-		<div class="container-section background-light-grey">
-			<div class="container-head">
-				<h2>CodeSquad's Curriculum</h2>
-			</div>
-			<div class="container-one-section">
-				<h3 class="center">Program Highlights</h3>
-				<ul class="ul-3-column">
-					<li>3-week, self-paced pre-course</li>
-					<li>24-week program (virtual via Zoom)</li>
-					<li>20 students per cohort</li>
-					<li>Weekly check-ins with assigned mentor</li>
-					<li>4:1 student to teacher ratio</li>
-					<li>Office hours available for 1:1 help</li>
-					<li>Hands-on learning every lesson</li>
-					<li>Classwork, homework, & quizzes</li>
-					<li>
-						Course project, personalized feedback & personal project
-					</li>
-					<li>Regular panels with industry professionals</li>
-					<li>Monthly, performance-based stipend</li>
-					<li>Job readiness & career coaching</li>
-					<li>Project Night showcase with industry professionals</li>
-				</ul>
-			</div>
-			<div class="container-one-section">
-				<h3 class="center">2024 Program Timeline</h3>
-				<br />
-				<div class="timeline">
-					<div class="container-timeline-section timeline-left">
-						<div class="timeline-content">
-							<h4 class="text-color-red">Mini Course</h4>
-							<span class="span-timeline-date">September 2023: 3 weeks</span>
-							<p>
-								Learn coding basics, create a webpage to submit as part of
-								your application, and see what it's like to learn from our
-								Teaching Fellows through self-paced, guided video lessons on
-								Google Classroom. Open office hours available for additional
-								instruction.
-							</p>
-						</div>
-					</div>
-					<div class="container-timeline-section timeline-right">
-						<div class="timeline-content">
-							<h4 class="text-color-red">Pre-Course</h4>
-							<span class="span-timeline-date">November 2023: 3 weeks</span>
-							<p>
-								Once accepted to the program, you'll complete a few more units
-								of additional pre-work so we can jump right into coding when
-								live lessons start.
-							</p>
-						</div>
-					</div>
-					<div class="container-timeline-section timeline-left">
-						<div class="timeline-content">
-							<h4 class="text-color-red">Bootcamp</h4>
-							<span class="span-timeline-date">January 2024 - June 2024: 24 weeks</span>
-							<!-- <p>Learn how to build a full-stack web application from our talented Teaching Fellows in hands-on lessons Monday-Wednesday from 6:30<span class="span-time">PM</span>-9:00<span class="span-time">PM</span> via Zoom and Saturdays from 9:00<span class="span-time">AM</span>-2:00<span class="span-time">PM</span> in-person (depending on health guidelines related to the pandemic). Get support via weekly check-ins with your mentor, open office hours, and 1:1 tutoring sessions as needed.</p> -->
-							<p>
-								Learn how to build a full-stack web application from our
-								talented Teaching Fellows in hands-on lessons Monday-Wednesday
-								from 6:30<span class="span-time">PM</span>-9:00<span class="span-time">PM</span> EST
-								and Saturdays from 9:00<span class="span-time">AM</span>-2:00<span class="span-time">PM</span> EST via Zoom.
-								Get support
-								via weekly check-ins with your mentor, open office hours, and
-								1:1 tutoring sessions as needed.
-							</p>
-						</div>
-					</div>
-					<div class="container-timeline-section timeline-right">
-						<div class="timeline-content">
-							<h4 class="text-color-red">Job Readiness</h4>
-							<span class="span-timeline-date">January 2024 - June 2024: 24 weeks</span>
-							<p>
-								Throughout the bootcamp, learn about the career
-								specializations within web development you'll be prepared to
-								pursue post-graduation. Learn from industry professionals, get
-								guidance on soft-skills, prepare for interviews, build your
-								resume, and more.
-							</p>
-						</div>
-					</div>
-					<div class="container-timeline-section timeline-left">
-						<div class="timeline-content">
-							<h4 class="text-color-red">Project Night</h4>
-							<span class="span-timeline-date">June 2024</span>
-							<p>
-								Showcase the full-stack personal project you'll build
-								throughout the bootcamp to industry professionals interested
-								in hiring you as a web developer.
-							</p>
-						</div>
-					</div>
-					<div class="container-timeline-section timeline-right">
-						<div class="timeline-content">
-							<h4 class="text-color-red">Career Support</h4>
-							<span class="span-timeline-date">June 2024 - December 2024 & beyond</span>
-							<p>
-								Work with support staff after graduation as you
-								pursue a career in web development. Get support around
-								interview prep, continue learning and coding in supportive
-								groups, and connect with the vast network of web developers
-								and hiring managers connected to CodeSquad.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			<br /><br />
-			<div class="container-one-section">
-				<h3 class="center">Languages, tools, & frameworks taught</h3>
-				<div class="container-tools-logos">
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-html.png" alt="HTML 5 logo" class="tools-logo" />
-							<h6>HTML</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">HTML</h6>
-							<p>
-								HyperText Markup Language is the language that the web is
-								written in. Web browsers translate HTML into the content
-								displayed on your screen. It's a cornerstone technology of the
-								web.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-css.png"
+                  alt="CSS logo"
+                  class="tools-logo"
+                />
+                <h6>CSS</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">CSS</h6>
+                <p>
+                  Cascading stylesheets is the language used to style and
+                  customize the appearance of the HTML delivered to your
+                  browser. It's a cornerstone technology of the web.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-css.png" alt="CSS logo" class="tools-logo" />
-							<h6>CSS</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">CSS</h6>
-							<p>
-								Cascading stylesheets is the language used to style and
-								customize the appearance of the HTML delivered to your
-								browser. It's a cornerstone technology of the web.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-javascript.png"
+                  alt="JavaScript logo"
+                  class="tools-logo"
+                />
+                <h6>JavaScript</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">JavaScript</h6>
+                <p>
+                  A programming language that allows developers to add
+                  interactivity and functionality to web pages. Used by more
+                  that 97% of websites, it's another cornerstone technology of
+                  the web.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-javascript.png" alt="JavaScript logo" class="tools-logo" />
-							<h6>JavaScript</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">JavaScript</h6>
-							<p>
-								A programming language that allows developers to add
-								interactivity and functionality to web pages. Used by more
-								that 97% of websites, it's another cornerstone technology of
-								the web.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/React-icon.svg.png"
+                  alt="React logo"
+                  class="tools-logo"
+                />
+                <h6>React</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">React</h6>
+                <p>
+                  A JavaScript library for building user interfaces out of
+                  individual pieces called components.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/React-icon.svg.png" alt="React logo" class="tools-logo" />
-							<h6>React</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">React</h6>
-							<p>A JavaScript library for building user interfaces.</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-vscode.png"
+                  alt="VS Code logo"
+                  class="tools-logo"
+                />
+                <h6>Visual Studio Code</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">
+                  Visual Studio Code
+                </h6>
+                <p>
+                  A free text editor from Microsoft. VS Code is a great option
+                  for developers because it's made for writing code. It can
+                  recognize the language or framework you're using, spot errors,
+                  and autocomplete common coding syntax.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-vscode.png" alt="VS Code logo" class="tools-logo" />
-							<h6>Visual Studio Code</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">
-								Visual Studio Code
-							</h6>
-							<p>
-								A free text editor from Microsoft. VS Code is a great option
-								for developers because it's made for writing code. It can
-								recognize the language or framework you're using, spot errors,
-								and autocomplete common coding syntax.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-terminal.png"
+                  alt="Command Line Interface logo"
+                  class="tools-logo"
+                />
+                <h6>Command Line Interface</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">
+                  Command Line Interface
+                </h6>
+                <p>
+                  The Command Line sends commands directly to your computer
+                  without using a mouse. Anything you can do by clicking buttons
+                  on your computer can be done through the Command Line, and
+                  then some. The Command Line doesn't use a graphical user
+                  interface.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-terminal.png" alt="Command Line Interface logo" class="tools-logo" />
-							<h6>Command Line Interface</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">
-								Command Line Interface
-							</h6>
-							<p>
-								The Command Line sends commands directly to your computer
-								without using a mouse. Anything you can do by clicking buttons
-								on your computer can be done through the Command Line, and
-								then some. The Command Line doesn't use a graphical user
-								interface.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-git.png"
+                  alt="Git logo"
+                  class="tools-logo"
+                />
+                <h6>Git</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">Git</h6>
+                <p>
+                  A software program that's used to track changes in documents
+                  and sets of files. It's an industry standard for web
+                  developers, and this version control system allows seamless
+                  teamwork.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-git.png" alt="Git logo" class="tools-logo" />
-							<h6>Git</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">Git</h6>
-							<p>
-								A software program that's used to track changes in documents
-								and sets of files. It's an industry standard for web
-								developers, and this version control system allows seamless
-								teamwork.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-github.png"
+                  alt="GitHub logo"
+                  class="tools-logo"
+                />
+                <h6>GitHub</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">GitHub</h6>
+                <p>
+                  A cloud-based hosting service for Git repositories. Another
+                  industry standard, GitHub allows web developers free storage
+                  of coding projects and makes it easy to see and control
+                  versions.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-github.png" alt="GitHub logo" class="tools-logo" />
-							<h6>GitHub</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">GitHub</h6>
-							<p>
-								A cloud-based hosting service for Git repositories. Another
-								industry standard, GitHub allows web developers free storage
-								of coding projects and makes it easy to see and control
-								versions.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front img-margin-more">
+                <img
+                  src="./assets/img/logo-node.png"
+                  alt="Node.js logo"
+                  class="tools-logo"
+                />
+                <h6>Node.js</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">Node.js</h6>
+                <p>
+                  Node is a runtime environment for the back-end of web apps
+                  that allows JavaScript code to execute outside of the browser.
+                  Before Node, back-end programming had to be done in a
+                  different language other than JavaScript.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front img-margin-more">
-							<img src="./assets/img/logo-npm.png" alt="NPM logo" class="tools-logo" />
-							<h6>NPM</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">NPM</h6>
-							<p>
-								Node Package Manager is a directory of code packages for the
-								Node.js runtime environment. Think of a node package as
-								pre-written code that simplifies the tasks that are commonly
-								required when developing full-stack web apps.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front img-margin-more">
+                <img
+                  src="./assets/img/logo-express.png"
+                  alt="Express.js logo"
+                  class="tools-logo"
+                />
+                <h6>Express.js</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">Express.js</h6>
+                <p>
+                  Express is a framework for Node.js. Think of it like a control
+                  system for Node. It's a bunch of code that has done much of
+                  the complex work in Node that programmers would have to write
+                  from scratch without it.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front img-margin-more">
-							<img src="./assets/img/logo-node.png" alt="Node.js logo" class="tools-logo" />
-							<h6>Node.js</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">Node.js</h6>
-							<p>
-								Node is a runtime environment for the back-end of web apps
-								that allows JavaScript code to execute outside of the browser.
-								Before Node, back-end programming had to be done in a
-								different language other than JavaScript.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-mongodb.png"
+                  alt="MongoDB logo"
+                  class="tools-logo"
+                />
+                <h6>MongoDB</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">MongoDB</h6>
+                <p>
+                  A NoSQL database program that stores data in a non-relational
+                  format, giving developers more flexibility in how data is
+                  designed and stored.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front img-margin-more">
-							<img src="./assets/img/logo-express.png" alt="Express.js logo" class="tools-logo" />
-							<h6>Express.js</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">Express.js</h6>
-							<p>
-								Express is a framework for Node.js. Think of it like a control
-								system for Node. It's a bunch of code that has done much of
-								the complex work in Node that programmers would have to write
-								from scratch without it.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-mongoose.jpeg"
+                  alt="Mongoose logo"
+                  class="tools-logo"
+                />
+                <h6>Mongoose</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">Mongoose</h6>
+                <p>
+                  A library of code that simplifies working with MongoDB and
+                  Express applications. We'll implement CRUD to Create database
+                  entries, Read data stored in the database, Update data, and
+                  Delete data.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front img-margin-more">
-							<img src="./assets/img/logo-ejs.png" alt="EJS logo" class="tools-logo" />
-							<h6>EJS</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">EJS</h6>
-							<p>
-								Embedded JavaScript templating is a templating engine for
-								Node.js. It allows programmers to create reusable templates
-								for page layouts, easily embed JavaScript into the layout, and
-								bring in data stored in the database.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front img-margin-more">
+                <img
+                  src="./assets/img/logo-npm.png"
+                  alt="NPM logo"
+                  class="tools-logo"
+                />
+                <h6>NPM</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">NPM</h6>
+                <p>
+                  Node Package Manager is a directory of code packages for the
+                  Node.js runtime environment. Think of a node package as
+                  pre-written code that simplifies the tasks that are commonly
+                  required when developing full-stack web apps.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-mongodb.png" alt="MongoDB logo" class="tools-logo" />
-							<h6>MongoDB</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">MongoDB</h6>
-							<p>
-								A NoSQL database program that stores data in a non-relational
-								format, giving developers more flexibility in how data is
-								designed and stored.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="container-tool-individual">
+              <div class="container-tool-individual-front">
+                <img
+                  src="./assets/img/logo-oauth.png"
+                  alt="OAuth 2.0 logo"
+                  class="tools-logo"
+                />
+                <h6>Authentication</h6>
+                <button class="button-more">
+                  What's this? <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+              <div class="container-tool-individual-back">
+                <h6 class="text-color-red text-underline">Authentication</h6>
+                <p>
+                  The process of verifying a user's identity, giving the program
+                  the ability to restrict or allow access to certain parts of
+                  the site. We'll implement OAuth 2.0 to allow users to sign in
+                  with other accounts like Google or GitHub.
+                </p>
+                <button class="button-more">
+                  Back <span class="caret-font-size">&#8250;</span>
+                </button>
+              </div>
+            </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-mongoose.jpeg" alt="Mongoose logo" class="tools-logo" />
-							<h6>Mongoose</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">Mongoose</h6>
-							<p>
-								A library of code that simplifies working with MongoDB and
-								Express applications. We'll implement CRUD to Create database
-								entries, Read data stored in the database, Update data, and
-								Delete data.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+            <div class="div-hidden"></div>
+            <div class="div-hidden"></div>
+            <div class="div-hidden"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-					<div class="container-tool-individual">
-						<div class="container-tool-individual-front">
-							<img src="./assets/img/logo-oauth.png" alt="OAuth 2.0 logo" class="tools-logo" />
-							<h6>Authentication</h6>
-							<button class="button-more">
-								What's this? <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-						<div class="container-tool-individual-back">
-							<h6 class="text-color-red text-underline">Authentication</h6>
-							<p>
-								The process of verifying a user's identity, giving the program
-								the ability to restrict or allow access to certain parts of
-								the site. We'll implement OAuth 2.0 to allow users to sign in
-								with other accounts like Google or Twitter.
-							</p>
-							<button class="button-more">
-								Back <span class="caret-font-size">&#8250;</span>
-							</button>
-						</div>
-					</div>
+    <!-- Begin page footer -->
+    <footer>
+      <div class="top-red-line"></div>
+      <div class="positionRel footerFont footerBak">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-md-4 col-md-offset-2">
+              <div class="footerLogo"></div>
+              <p>
+                CodeSquad is a nonprofit organization that trains talented
+                adults from low-income families to become full-stack developers
+                and launch a new career.
+              </p>
+              <br />
+              <p class="footerHead">Quick Links</p>
+              <ul class="momentumUL">
+                <li><a href="index.html">What we do</a></li>
+                <li><a href="businesses.html">For businesses</a></li>
+                <li><a href="students.html">For students</a></li>
+                <li class="dropdown">
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    About Us<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu" id="cohortDropdown">
+                    <li><a href="about-us.html">The CodeSquad Story</a></li>
+                    <li><a href="cohort.html">Spring 2018 Cohort</a></li>
+                    <li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
+                    <li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
+                    <li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
+                    <li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
+                    <li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
+                    <li><a href="cohort2024.html">Spring 2024 Cohort</a></li>
+                    <li><a href="careers.html">Job Openings</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="dropdown-toggle"
+                    data-toggle="dropdown"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Get involved<span class="caret"></span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="students.html">Become a developer</a></li>
+                    <li>
+                      <a href="businesses.html">Host a CodeSquad intern</a>
+                    </li>
+                    <li><a href="volunteer.html">Volunteer</a></li>
+                  </ul>
+                </li>
+                <li><a href="donate.html">Donate</a></li>
+              </ul>
+              <br />
+              <p class="footerHead">Join us on social media</p>
+              <a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
+                <img
+                  src="assets/img/Facebook-logo3.png"
+                  height="54"
+                  width="54"
+                  alt="Facebook logo"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/codesquad.org"
+                target="_blank"
+                ><img
+                  src="assets/img/LinkedInLogo.png"
+                  height="54"
+                  width="54"
+                  alt="LinkedIn logo"
+              /></a>
+              <a href="https://www.instagram.com/codesquadpix/" target="_blank"
+                ><img
+                  src="assets/img/InstagramLogo.png"
+                  height="54"
+                  width="54"
+                  alt="Instagram logo"
+              /></a>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <!-- Begin Mailchimp Signup Form -->
+              <link
+                href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
+                rel="stylesheet"
+                type="text/css"
+              />
+              <div id="mc_embed_signup">
+                <form
+                  action="https://codesquad.us2.list-manage.com/subscribe/post?u=364221539aba8d6ca0f5ae380&amp;id=3ce50926c4"
+                  method="post"
+                  id="mc-embedded-subscribe-form"
+                  name="mc-embedded-subscribe-form"
+                  class="validate"
+                  target="_blank"
+                  novalidate
+                >
+                  <div id="mc_embed_signup_scroll">
+                    <h2>Subscribe</h2>
+                    <div class="indicates-required">
+                      <span class="asterisk">*</span> indicates required
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-EMAIL"
+                        >Email: <span class="asterisk">*</span>
+                      </label>
+                      <input
+                        type="email"
+                        value=""
+                        name="EMAIL"
+                        class="required email"
+                        id="mce-EMAIL"
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-FNAME"
+                        >First name: <span class="asterisk">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value=""
+                        name="FNAME"
+                        class="required"
+                        id="mce-FNAME"
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-LNAME"
+                        >Last name: <span class="asterisk">*</span>
+                      </label>
+                      <input
+                        type="text"
+                        value=""
+                        name="LNAME"
+                        class="required"
+                        id="mce-LNAME"
+                      />
+                    </div>
+                    <div class="mc-field-group">
+                      <label for="mce-MMERGE6"
+                        >Please choose one: <span class="asterisk">*</span>
+                      </label>
+                      <select name="MMERGE6" class="required" id="mce-MMERGE6">
+                        <option value=""></option>
+                        <option value="I'm looking to hire developers">
+                          I'm looking to hire developers
+                        </option>
+                        <option value="I’d like to discuss a partnership">
+                          I'd like to discuss a partnership
+                        </option>
+                        <option value="I'm interested in volunteering">
+                          I'm interested in volunteering
+                        </option>
+                        <option
+                          value="I'm interested in applying to the program"
+                        >
+                          I'm interested in applying to the program
+                        </option>
+                        <option value="I'm just here to support CodeSquad">
+                          I'm just here to support CodeSquad
+                        </option>
+                      </select>
+                    </div>
+                    <div hidden="true">
+                      <input type="hidden" name="tags" value="1287435" />
+                    </div>
+                    <div id="mce-responses" class="clear">
+                      <div
+                        class="response"
+                        id="mce-error-response"
+                        style="display: none"
+                      ></div>
+                      <div
+                        class="response"
+                        id="mce-success-response"
+                        style="display: none"
+                      ></div>
+                    </div>
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div
+                      style="position: absolute; left: -5000px"
+                      aria-hidden="true"
+                    >
+                      <input
+                        type="text"
+                        name="b_364221539aba8d6ca0f5ae380_3ce50926c4"
+                        tabindex="-1"
+                        value=""
+                      />
+                    </div>
+                    <div class="clear">
+                      <input
+                        type="submit"
+                        value="Subscribe"
+                        name="subscribe"
+                        id="mc-embedded-subscribe"
+                        class="button"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <script
+                type="text/javascript"
+                src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
+              ></script>
+              <script type="text/javascript">
+                (function ($) {
+                  window.fnames = new Array();
+                  window.ftypes = new Array();
+                  fnames[0] = "EMAIL";
+                  ftypes[0] = "email";
+                  fnames[1] = "FNAME";
+                  ftypes[1] = "text";
+                  fnames[2] = "LNAME";
+                  ftypes[2] = "text";
+                  fnames[3] = "MMERGE3";
+                  ftypes[3] = "text";
+                  fnames[4] = "MMERGE4";
+                  ftypes[4] = "text";
+                  fnames[6] = "MMERGE6";
+                  ftypes[6] = "dropdown";
+                  fnames[5] = "MMERGE5";
+                  ftypes[5] = "text";
+                })(jQuery);
+                var $mcj = jQuery.noConflict(true);
+              </script>
+              <!--End mc_embed_signup-->
+            </div>
+          </div>
+          <!-- End row -->
+        </div>
+        <!-- End container -->
+      </div>
+      <!-- End of <div> with position "relative" -->
+      <div class="positionRel">
+        <p class="footer-copyright">
+          Copyright &copy; CodeSquad 2018-2024. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End page footer -->
 
-					<div class="div-hidden"></div>
-					<div class="div-hidden"></div>
-					<div class="div-hidden"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Begin page footer -->
-	<footer>
-		<div class="top-red-line"></div>
-		<div class="positionRel footerFont footerBak">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12 col-md-4 col-md-offset-2">
-						<div class="footerLogo"></div>
-						<p>
-							CodeSquad is a nonprofit organization that trains talented
-							adults from low-income families to become full-stack developers
-							and launch a new career.
-						</p>
-						<br />
-						<p class="footerHead">Quick Links</p>
-						<ul class="momentumUL">
-							<li><a href="index.html">What we do</a></li>
-							<li><a href="businesses.html">For businesses</a></li>
-							<li><a href="students.html">For students</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">
-									About Us<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu" id="cohortDropdown">
-									<li><a href="about-us.html">The CodeSquad Story</a></li>
-									<li><a href="cohort.html">Spring 2018 Cohort</a></li>
-									<li><a href="cohort2019.html">Spring 2019 Cohort</a></li>
-									<li><a href="cohort2020.html">Spring 2020 Cohort</a></li>
-									<li><a href="cohort2021.html">Spring 2021 Cohort</a></li>
-									<li><a href="cohort2022.html">Spring 2022 Cohort</a></li>
-									<li><a href="cohort2023.html">Spring 2023 Cohort</a></li>
-									<li><a href="cohort2024.html">Spring 2024 Cohort</a></li>
-									<li><a href="careers.html">Job Openings</a></li>
-								</ul>
-							</li>
-							<li>
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-									aria-expanded="false">
-									Get involved<span class="caret"></span>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a href="students.html">Become a developer</a></li>
-									<li>
-										<a href="businesses.html">Host a CodeSquad intern</a>
-									</li>
-									<li><a href="volunteer.html">Volunteer</a></li>
-								</ul>
-							</li>
-							<li><a href="donate.html">Donate</a></li>
-						</ul>
-						<br />
-						<p class="footerHead">Join us on social media</p>
-						<a href="http://www.facebook.com/CodeSquadOrg" target="_blank">
-							<img src="assets/img/Facebook-logo3.png" height="54" width="54" alt="Facebook logo" />
-						</a>
-						<a href="https://www.linkedin.com/company/codesquad.org" target="_blank"><img
-								src="assets/img/LinkedInLogo.png" height="54" width="54" alt="LinkedIn logo" /></a>
-						<a href="https://www.instagram.com/codesquadpix/" target="_blank"><img src="assets/img/InstagramLogo.png"
-								height="54" width="54" alt="Instagram logo" /></a>
-					</div>
-					<div class="col-xs-12 col-md-6">
-						<!-- Begin Mailchimp Signup Form -->
-						<link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css" />
-						<div id="mc_embed_signup">
-							<form
-								action="https://codesquad.us2.list-manage.com/subscribe/post?u=364221539aba8d6ca0f5ae380&amp;id=3ce50926c4"
-								method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
-								target="_blank" novalidate>
-								<div id="mc_embed_signup_scroll">
-									<h2>Subscribe</h2>
-									<div class="indicates-required">
-										<span class="asterisk">*</span> indicates required
-									</div>
-									<div class="mc-field-group">
-										<label for="mce-EMAIL">Email: <span class="asterisk">*</span>
-										</label>
-										<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
-									</div>
-									<div class="mc-field-group">
-										<label for="mce-FNAME">First name: <span class="asterisk">*</span>
-										</label>
-										<input type="text" value="" name="FNAME" class="required" id="mce-FNAME" />
-									</div>
-									<div class="mc-field-group">
-										<label for="mce-LNAME">Last name: <span class="asterisk">*</span>
-										</label>
-										<input type="text" value="" name="LNAME" class="required" id="mce-LNAME" />
-									</div>
-									<div class="mc-field-group">
-										<label for="mce-MMERGE6">Please choose one: <span class="asterisk">*</span>
-										</label>
-										<select name="MMERGE6" class="required" id="mce-MMERGE6">
-											<option value=""></option>
-											<option value="I'm looking to hire developers">
-												I'm looking to hire developers
-											</option>
-											<option value="I’d like to discuss a partnership">
-												I'd like to discuss a partnership
-											</option>
-											<option value="I'm interested in volunteering">
-												I'm interested in volunteering
-											</option>
-											<option value="I'm interested in applying to the program">
-												I'm interested in applying to the program
-											</option>
-											<option value="I'm just here to support CodeSquad">
-												I'm just here to support CodeSquad
-											</option>
-										</select>
-									</div>
-									<div hidden="true">
-										<input type="hidden" name="tags" value="1287435" />
-									</div>
-									<div id="mce-responses" class="clear">
-										<div class="response" id="mce-error-response" style="display: none"></div>
-										<div class="response" id="mce-success-response" style="display: none"></div>
-									</div>
-									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-									<div style="position: absolute; left: -5000px" aria-hidden="true">
-										<input type="text" name="b_364221539aba8d6ca0f5ae380_3ce50926c4" tabindex="-1" value="" />
-									</div>
-									<div class="clear">
-										<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
-									</div>
-								</div>
-							</form>
-						</div>
-						<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-						<script type="text/javascript">
-							(function ($) {
-								window.fnames = new Array();
-								window.ftypes = new Array();
-								fnames[0] = "EMAIL";
-								ftypes[0] = "email";
-								fnames[1] = "FNAME";
-								ftypes[1] = "text";
-								fnames[2] = "LNAME";
-								ftypes[2] = "text";
-								fnames[3] = "MMERGE3";
-								ftypes[3] = "text";
-								fnames[4] = "MMERGE4";
-								ftypes[4] = "text";
-								fnames[6] = "MMERGE6";
-								ftypes[6] = "dropdown";
-								fnames[5] = "MMERGE5";
-								ftypes[5] = "text";
-							})(jQuery);
-							var $mcj = jQuery.noConflict(true);
-						</script>
-						<!--End mc_embed_signup-->
-					</div>
-				</div>
-				<!-- End row -->
-			</div>
-			<!-- End container -->
-		</div>
-		<!-- End of <div> with position "relative" -->
-		<div class="positionRel">
-			<p class="footer-copyright">
-				Copyright &copy; CodeSquad 2018-2024. All rights reserved.
-			</p>
-		</div>
-	</footer>
-	<!-- End page footer -->
-
-	<!-- jQuery link & Bootstrap JS link -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="assets/js/lib/bootstrap.min.js" type="text/javascript"></script>
-</body>
-<script src="/assets/js/codesquad_js.js"></script>
-
+    <!-- jQuery link & Bootstrap JS link -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="assets/js/lib/bootstrap.min.js"
+      type="text/javascript"
+    ></script>
+  </body>
+  <script src="/assets/js/codesquad_js.js"></script>
 </html>
