@@ -169,7 +169,7 @@ body {
 	margin-bottom: 0;
 	font-size: large;
 	color: white;
-	background-color: #343434;
+	/* background-color: #343434; */
 	border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
@@ -417,7 +417,7 @@ h5 {
 }
 .headlineTxtBiz {
 	top: 37%;
-	left: 10%;
+	left: 25%;
 }
 .headlineTxtCohort {
 	top: 79%;
@@ -1499,6 +1499,7 @@ p {
 .imgSize{
 	width: 60%;
 	height: auto;
+	margin-bottom: 10px;
 }
 
 .paragraphWidth{
@@ -1510,6 +1511,10 @@ p {
 	line-height: 1.5;
 	text-shadow: 2px 3px 5px rgba(0,0,0,0.2);
 }
+
+.accordian-container{
+	width: 70%;
+}
 .redSection{
 	background-color: var(--red);
 	width: 100%;
@@ -1520,6 +1525,10 @@ p {
 
 .grey{
 	background-color: var(--light-grey);
+}
+
+.form-group {
+	width: 50vw;
 }
 
 footer {
@@ -1708,6 +1717,10 @@ footer {
 	.ul-3-column,
 	.ul-2-column {
 		column-count: 1;
+	}
+
+	.accordian-container{
+		width: 90%;
 	}
 }
 
