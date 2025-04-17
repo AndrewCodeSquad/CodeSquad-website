@@ -293,8 +293,8 @@ ul li ul li {
 
 .footerBak {
 	background: url("../img/blackBak.png");
-	background-size: cover;
-	background-repeat: repeat;
+	/* background-size: cover; */
+	/* background-repeat: repeat; */
 	padding-bottom: 2em;
 }
 
@@ -1502,6 +1502,13 @@ p {
 	margin-bottom: 10px;
 }
 
+.imgSize-redSection{
+	/* This needs to be replaced with appropriate styling for when img is provided */
+	width: 1200px;
+	height: 500px;
+	background-color: white;
+}
+
 .paragraphWidth{
  max-width: 50%;
 }
@@ -1515,6 +1522,25 @@ p {
 .accordian-container{
 	width: 70%;
 }
+
+.accordian-container-header{
+	background-color: var(--red);
+}
+
+.accordian-container-btn{
+	color: var(--white);
+	width: 100%;
+}
+
+.accordian-container-btn:hover{
+	color: var(--white);
+}
+
+.btn-link{
+	color: var(--white);
+	text-decoration: none; 
+}
+
 .redSection{
 	background-color: var(--red);
 	width: 100%;
