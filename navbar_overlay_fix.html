@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Overlay Fix</title>
+    <style>
+        /* Add these CSS rules to your existing codesquad_css.css file */
+        
+        /* Make navbar fixed/sticky and overlay content */
+        .navbar {
+            position: fixed;
+            top: 5px; /* Account for the red line at top */
+            left: 0;
+            right: 0;
+            z-index: 1030; /* High z-index to stay above other content */
+            margin-bottom: 0;
+        }
+        
+        /* Ensure the collapsed menu overlays properly */
+        .navbar-collapse {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: white;
+            border: 1px solid #e7e7e7;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+        }
+        
+        /* Prevent Bootstrap from adding body padding */
+        body {
+            padding-top: 0 !important;
+        }
+        
+        /* Add top padding to main content to account for fixed navbar */
+        .positionRel:first-of-type {
+            padding-top: 80px; /* Adjust this value based on your navbar height */
+        }
+        
+        /* Ensure dropdown menus work properly with fixed navbar */
+        .navbar-nav .dropdown-menu {
+            position: absolute;
+        }
+        
+        /* Make sure the red line stays at the very top */
+        .top-red-line {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1031; /* Higher than navbar */
+        }
+        
+        /* Adjust for mobile - ensure collapsed menu doesn't push content */
+        @media (max-width: 767px) {
+            .navbar-collapse.in,
+            .navbar-collapse.collapsing {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: white;
+                border-top: 1px solid #e7e7e7;
+                box-shadow: 0 6px 12px rgba(0,0,0,0.175);
+            }
+            
+            /* Ensure the main banner doesn't get covered too much on mobile */
+            .positionRel:first-of-type {
+                padding-top: 70px;
+            }
+        }
+        
+        /* Optional: Add smooth transition for better UX */
+        .navbar-collapse {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h2>CSS Rules to Add to Your Existing codesquad_css.css File</h2>
+    
+    <div style="background-color: #f8f9fa; padding: 20px; border-left: 4px solid #cb3524; margin: 20px 0;">
+        <h3>Instructions:</h3>
+        <ol>
+            <li>Copy the CSS rules shown above (between the &lt;style&gt; tags)</li>
+            <li>Add them to the end of your existing <code>codesquad_css.css</code> file</li>
+            <li>The navbar will now overlay content instead of pushing it down</li>
+            <li>Adjust the <code>padding-top</code> values if needed based on your actual navbar height</li>
+        </ol>
+    </div>
+    
+    <div style="background-color: #fff3cd; padding: 15px; border: 1px solid #ffeaa7; margin: 20px 0;">
+        <h4>Key Changes:</h4>
+        <ul>
+            <li><strong>Fixed positioning:</strong> Makes the navbar stick to the top and overlay content</li>
+            <li><strong>Z-index management:</strong> Ensures proper layering of navbar and red line</li>
+            <li><strong>Absolute collapse menu:</strong> Mobile menu overlays instead of pushing content</li>
+            <li><strong>Content padding:</strong> Adds space so content isn't hidden behind fixed navbar</li>
+            <li><strong>Bootstrap override:</strong> Prevents Bootstrap from adding unwanted body padding</li>
+        </ul>
+    </div>
+    
+    <div style="background-color: #d1ecf1; padding: 15px; border: 1px solid #bee5eb; margin: 20px 0;">
+        <h4>Fine-tuning:</h4>
+        <p>You may need to adjust these values based on your specific layout:</p>
+        <ul>
+            <li><code>padding-top: 80px</code> - Increase/decrease based on your navbar height</li>
+            <li><code>top: 5px</code> - Adjust based on your red line height</li>
+            <li>Test on different screen sizes to ensure proper spacing</li>
+        </ul>
+    </div>
+</body>
+</html>
