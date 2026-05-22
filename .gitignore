@@ -28,3 +28,8 @@ project-day3.html
 git command to reset to previous commit.txt
 test
 codesquad-test.org_volunteer.html.png
+<<<<<<< HEAD
+.DS_Store
+=======
+.DS_Store
+>>>>>>> 50cb6c7 (updating the html and images)
