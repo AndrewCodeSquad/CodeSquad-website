@@ -763,6 +763,12 @@ p {
 	background-repeat: no-repeat;
 	height: 280px;
 }
+.slantStudent26 {
+	background: url("../img/graduates/2025/2025-cohort-with-laptops.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 280px;
+}
 
 .top-red-line {
 	height: 5px;
